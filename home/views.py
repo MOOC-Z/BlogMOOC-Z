@@ -49,7 +49,7 @@ class IndexView(View):
             'page_num': page_num,
         }
 
-        return render(request, 'index.html', context=context)
+        return render(request, 'index.html',context=context)
 
 
 class DetailView(View):

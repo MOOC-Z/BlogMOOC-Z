@@ -2315,3 +2315,895 @@ Traceback (most recent call last):
     raise ImproperlyConfigured("settings.DATABASES is improperly configured. "
 django.core.exceptions.ImproperlyConfigured: settings.DATABASES is improperly configured. Please supply the ENGINE value. Check settings documentation for more details.
 ERROR 2020-06-19 11:05:48,053 basehttp 154 "GET / HTTP/1.1" 500 141784
+INFO 2020-06-19 14:50:38,049 autoreload 578 Watching for file changes with StatReloader
+ERROR 2020-06-19 14:50:39,965 log 228 Internal Server Error: /
+Traceback (most recent call last):
+  File "E:\PycharmProjects\virtualenvs\Django\lib\site-packages\django\core\handlers\exception.py", line 34, in inner
+    response = get_response(request)
+  File "E:\PycharmProjects\virtualenvs\Django\lib\site-packages\django\core\handlers\base.py", line 115, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "E:\PycharmProjects\virtualenvs\Django\lib\site-packages\django\core\handlers\base.py", line 113, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "E:\PycharmProjects\virtualenvs\Django\lib\site-packages\django\views\generic\base.py", line 71, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "E:\PycharmProjects\virtualenvs\Django\lib\site-packages\django\views\generic\base.py", line 97, in dispatch
+    return handler(request, *args, **kwargs)
+  File "E:\PycharmProjects\Blog\home\views.py", line 20, in get
+    category = ArticleCategory.objects.get(id=cat_id)
+  File "E:\PycharmProjects\virtualenvs\Django\lib\site-packages\django\db\models\manager.py", line 82, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "E:\PycharmProjects\virtualenvs\Django\lib\site-packages\django\db\models\query.py", line 402, in get
+    num = len(clone)
+  File "E:\PycharmProjects\virtualenvs\Django\lib\site-packages\django\db\models\query.py", line 256, in __len__
+    self._fetch_all()
+  File "E:\PycharmProjects\virtualenvs\Django\lib\site-packages\django\db\models\query.py", line 1242, in _fetch_all
+    self._result_cache = list(self._iterable_class(self))
+  File "E:\PycharmProjects\virtualenvs\Django\lib\site-packages\django\db\models\query.py", line 55, in __iter__
+    results = compiler.execute_sql(chunked_fetch=self.chunked_fetch, chunk_size=self.chunk_size)
+  File "E:\PycharmProjects\virtualenvs\Django\lib\site-packages\django\db\models\sql\compiler.py", line 1084, in execute_sql
+    sql, params = self.as_sql()
+  File "E:\PycharmProjects\virtualenvs\Django\lib\site-packages\django\db\models\sql\compiler.py", line 471, in as_sql
+    extra_select, order_by, group_by = self.pre_sql_setup()
+  File "E:\PycharmProjects\virtualenvs\Django\lib\site-packages\django\db\models\sql\compiler.py", line 53, in pre_sql_setup
+    self.setup_query()
+  File "E:\PycharmProjects\virtualenvs\Django\lib\site-packages\django\db\models\sql\compiler.py", line 44, in setup_query
+    self.select, self.klass_info, self.annotation_col_map = self.get_select()
+  File "E:\PycharmProjects\virtualenvs\Django\lib\site-packages\django\db\models\sql\compiler.py", line 252, in get_select
+    sql, params = self.compile(col, select_format=True)
+  File "E:\PycharmProjects\virtualenvs\Django\lib\site-packages\django\db\models\sql\compiler.py", line 402, in compile
+    sql, params = node.as_sql(self, self.connection)
+  File "E:\PycharmProjects\virtualenvs\Django\lib\site-packages\django\db\models\expressions.py", line 734, in as_sql
+    return "%s.%s" % (qn(self.alias), qn(self.target.column)), []
+  File "E:\PycharmProjects\virtualenvs\Django\lib\site-packages\django\db\models\sql\compiler.py", line 393, in quote_name_unless_alias
+    r = self.connection.ops.quote_name(name)
+  File "E:\PycharmProjects\virtualenvs\Django\lib\site-packages\django\db\backends\dummy\base.py", line 20, in complain
+    raise ImproperlyConfigured("settings.DATABASES is improperly configured. "
+django.core.exceptions.ImproperlyConfigured: settings.DATABASES is improperly configured. Please supply the ENGINE value. Check settings documentation for more details.
+ERROR 2020-06-19 14:50:39,967 basehttp 154 "GET / HTTP/1.1" 500 143273
+WARNING 2020-06-19 14:50:40,184 log 228 Not Found: /favicon.ico
+WARNING 2020-06-19 14:50:40,184 basehttp 154 "GET /favicon.ico HTTP/1.1" 404 3802
+INFO 2020-06-19 14:51:43,440 autoreload 578 Watching for file changes with StatReloader
+ERROR 2020-06-19 14:51:45,177 log 228 Internal Server Error: /
+Traceback (most recent call last):
+  File "E:\PycharmProjects\virtualenvs\Django\lib\site-packages\django\core\handlers\exception.py", line 34, in inner
+    response = get_response(request)
+  File "E:\PycharmProjects\virtualenvs\Django\lib\site-packages\django\core\handlers\base.py", line 115, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "E:\PycharmProjects\virtualenvs\Django\lib\site-packages\django\core\handlers\base.py", line 113, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "E:\PycharmProjects\virtualenvs\Django\lib\site-packages\django\views\generic\base.py", line 71, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "E:\PycharmProjects\virtualenvs\Django\lib\site-packages\django\views\generic\base.py", line 97, in dispatch
+    return handler(request, *args, **kwargs)
+  File "E:\PycharmProjects\Blog\home\views.py", line 20, in get
+    category = ArticleCategory.objects.get(id=cat_id)
+  File "E:\PycharmProjects\virtualenvs\Django\lib\site-packages\django\db\models\manager.py", line 82, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "E:\PycharmProjects\virtualenvs\Django\lib\site-packages\django\db\models\query.py", line 402, in get
+    num = len(clone)
+  File "E:\PycharmProjects\virtualenvs\Django\lib\site-packages\django\db\models\query.py", line 256, in __len__
+    self._fetch_all()
+  File "E:\PycharmProjects\virtualenvs\Django\lib\site-packages\django\db\models\query.py", line 1242, in _fetch_all
+    self._result_cache = list(self._iterable_class(self))
+  File "E:\PycharmProjects\virtualenvs\Django\lib\site-packages\django\db\models\query.py", line 55, in __iter__
+    results = compiler.execute_sql(chunked_fetch=self.chunked_fetch, chunk_size=self.chunk_size)
+  File "E:\PycharmProjects\virtualenvs\Django\lib\site-packages\django\db\models\sql\compiler.py", line 1084, in execute_sql
+    sql, params = self.as_sql()
+  File "E:\PycharmProjects\virtualenvs\Django\lib\site-packages\django\db\models\sql\compiler.py", line 471, in as_sql
+    extra_select, order_by, group_by = self.pre_sql_setup()
+  File "E:\PycharmProjects\virtualenvs\Django\lib\site-packages\django\db\models\sql\compiler.py", line 53, in pre_sql_setup
+    self.setup_query()
+  File "E:\PycharmProjects\virtualenvs\Django\lib\site-packages\django\db\models\sql\compiler.py", line 44, in setup_query
+    self.select, self.klass_info, self.annotation_col_map = self.get_select()
+  File "E:\PycharmProjects\virtualenvs\Django\lib\site-packages\django\db\models\sql\compiler.py", line 252, in get_select
+    sql, params = self.compile(col, select_format=True)
+  File "E:\PycharmProjects\virtualenvs\Django\lib\site-packages\django\db\models\sql\compiler.py", line 402, in compile
+    sql, params = node.as_sql(self, self.connection)
+  File "E:\PycharmProjects\virtualenvs\Django\lib\site-packages\django\db\models\expressions.py", line 734, in as_sql
+    return "%s.%s" % (qn(self.alias), qn(self.target.column)), []
+  File "E:\PycharmProjects\virtualenvs\Django\lib\site-packages\django\db\models\sql\compiler.py", line 393, in quote_name_unless_alias
+    r = self.connection.ops.quote_name(name)
+  File "E:\PycharmProjects\virtualenvs\Django\lib\site-packages\django\db\backends\dummy\base.py", line 20, in complain
+    raise ImproperlyConfigured("settings.DATABASES is improperly configured. "
+django.core.exceptions.ImproperlyConfigured: settings.DATABASES is improperly configured. Please supply the ENGINE value. Check settings documentation for more details.
+ERROR 2020-06-19 14:51:45,180 basehttp 154 "GET / HTTP/1.1" 500 143273
+INFO 2020-06-19 14:52:41,305 autoreload 578 Watching for file changes with StatReloader
+ERROR 2020-06-19 14:52:43,016 log 228 Internal Server Error: /
+Traceback (most recent call last):
+  File "E:\PycharmProjects\virtualenvs\Django\lib\site-packages\django\core\handlers\exception.py", line 34, in inner
+    response = get_response(request)
+  File "E:\PycharmProjects\virtualenvs\Django\lib\site-packages\django\core\handlers\base.py", line 115, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "E:\PycharmProjects\virtualenvs\Django\lib\site-packages\django\core\handlers\base.py", line 113, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "E:\PycharmProjects\virtualenvs\Django\lib\site-packages\django\views\generic\base.py", line 71, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "E:\PycharmProjects\virtualenvs\Django\lib\site-packages\django\views\generic\base.py", line 97, in dispatch
+    return handler(request, *args, **kwargs)
+  File "E:\PycharmProjects\Blog\home\views.py", line 33, in get
+    paginator = Paginator(articles, page_size)
+NameError: name 'articles' is not defined
+ERROR 2020-06-19 14:52:43,017 basehttp 154 "GET / HTTP/1.1" 500 83384
+INFO 2020-06-19 14:53:43,422 autoreload 203 E:\PycharmProjects\Blog\home\views.py changed, reloading.
+INFO 2020-06-19 14:53:44,269 autoreload 578 Watching for file changes with StatReloader
+INFO 2020-06-19 14:55:18,199 autoreload 578 Watching for file changes with StatReloader
+ERROR 2020-06-19 14:55:19,543 log 228 Internal Server Error: /
+Traceback (most recent call last):
+  File "E:\PycharmProjects\virtualenvs\Django\lib\site-packages\django\core\handlers\exception.py", line 34, in inner
+    response = get_response(request)
+  File "E:\PycharmProjects\virtualenvs\Django\lib\site-packages\django\core\handlers\base.py", line 115, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "E:\PycharmProjects\virtualenvs\Django\lib\site-packages\django\core\handlers\base.py", line 113, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "E:\PycharmProjects\virtualenvs\Django\lib\site-packages\django\views\generic\base.py", line 71, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "E:\PycharmProjects\virtualenvs\Django\lib\site-packages\django\views\generic\base.py", line 97, in dispatch
+    return handler(request, *args, **kwargs)
+  File "E:\PycharmProjects\Blog\home\views.py", line 20, in get
+    category = ArticleCategory.objects.get(id=cat_id)
+  File "E:\PycharmProjects\virtualenvs\Django\lib\site-packages\django\db\models\manager.py", line 82, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "E:\PycharmProjects\virtualenvs\Django\lib\site-packages\django\db\models\query.py", line 402, in get
+    num = len(clone)
+  File "E:\PycharmProjects\virtualenvs\Django\lib\site-packages\django\db\models\query.py", line 256, in __len__
+    self._fetch_all()
+  File "E:\PycharmProjects\virtualenvs\Django\lib\site-packages\django\db\models\query.py", line 1242, in _fetch_all
+    self._result_cache = list(self._iterable_class(self))
+  File "E:\PycharmProjects\virtualenvs\Django\lib\site-packages\django\db\models\query.py", line 55, in __iter__
+    results = compiler.execute_sql(chunked_fetch=self.chunked_fetch, chunk_size=self.chunk_size)
+  File "E:\PycharmProjects\virtualenvs\Django\lib\site-packages\django\db\models\sql\compiler.py", line 1084, in execute_sql
+    sql, params = self.as_sql()
+  File "E:\PycharmProjects\virtualenvs\Django\lib\site-packages\django\db\models\sql\compiler.py", line 471, in as_sql
+    extra_select, order_by, group_by = self.pre_sql_setup()
+  File "E:\PycharmProjects\virtualenvs\Django\lib\site-packages\django\db\models\sql\compiler.py", line 53, in pre_sql_setup
+    self.setup_query()
+  File "E:\PycharmProjects\virtualenvs\Django\lib\site-packages\django\db\models\sql\compiler.py", line 44, in setup_query
+    self.select, self.klass_info, self.annotation_col_map = self.get_select()
+  File "E:\PycharmProjects\virtualenvs\Django\lib\site-packages\django\db\models\sql\compiler.py", line 252, in get_select
+    sql, params = self.compile(col, select_format=True)
+  File "E:\PycharmProjects\virtualenvs\Django\lib\site-packages\django\db\models\sql\compiler.py", line 402, in compile
+    sql, params = node.as_sql(self, self.connection)
+  File "E:\PycharmProjects\virtualenvs\Django\lib\site-packages\django\db\models\expressions.py", line 734, in as_sql
+    return "%s.%s" % (qn(self.alias), qn(self.target.column)), []
+  File "E:\PycharmProjects\virtualenvs\Django\lib\site-packages\django\db\models\sql\compiler.py", line 393, in quote_name_unless_alias
+    r = self.connection.ops.quote_name(name)
+  File "E:\PycharmProjects\virtualenvs\Django\lib\site-packages\django\db\backends\dummy\base.py", line 20, in complain
+    raise ImproperlyConfigured("settings.DATABASES is improperly configured. "
+django.core.exceptions.ImproperlyConfigured: settings.DATABASES is improperly configured. Please supply the ENGINE value. Check settings documentation for more details.
+ERROR 2020-06-19 14:55:19,547 basehttp 154 "GET / HTTP/1.1" 500 143273
+INFO 2020-06-19 14:56:38,336 autoreload 578 Watching for file changes with StatReloader
+ERROR 2020-06-19 14:56:40,112 log 228 Internal Server Error: /
+Traceback (most recent call last):
+  File "E:\PycharmProjects\virtualenvs\Django\lib\site-packages\django\core\handlers\exception.py", line 34, in inner
+    response = get_response(request)
+  File "E:\PycharmProjects\virtualenvs\Django\lib\site-packages\django\core\handlers\base.py", line 115, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "E:\PycharmProjects\virtualenvs\Django\lib\site-packages\django\core\handlers\base.py", line 113, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "E:\PycharmProjects\virtualenvs\Django\lib\site-packages\django\views\generic\base.py", line 71, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "E:\PycharmProjects\virtualenvs\Django\lib\site-packages\django\views\generic\base.py", line 97, in dispatch
+    return handler(request, *args, **kwargs)
+  File "E:\PycharmProjects\Blog\home\views.py", line 20, in get
+    category = ArticleCategory.objects.get(id=cat_id)
+  File "E:\PycharmProjects\virtualenvs\Django\lib\site-packages\django\db\models\manager.py", line 82, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "E:\PycharmProjects\virtualenvs\Django\lib\site-packages\django\db\models\query.py", line 402, in get
+    num = len(clone)
+  File "E:\PycharmProjects\virtualenvs\Django\lib\site-packages\django\db\models\query.py", line 256, in __len__
+    self._fetch_all()
+  File "E:\PycharmProjects\virtualenvs\Django\lib\site-packages\django\db\models\query.py", line 1242, in _fetch_all
+    self._result_cache = list(self._iterable_class(self))
+  File "E:\PycharmProjects\virtualenvs\Django\lib\site-packages\django\db\models\query.py", line 55, in __iter__
+    results = compiler.execute_sql(chunked_fetch=self.chunked_fetch, chunk_size=self.chunk_size)
+  File "E:\PycharmProjects\virtualenvs\Django\lib\site-packages\django\db\models\sql\compiler.py", line 1084, in execute_sql
+    sql, params = self.as_sql()
+  File "E:\PycharmProjects\virtualenvs\Django\lib\site-packages\django\db\models\sql\compiler.py", line 471, in as_sql
+    extra_select, order_by, group_by = self.pre_sql_setup()
+  File "E:\PycharmProjects\virtualenvs\Django\lib\site-packages\django\db\models\sql\compiler.py", line 53, in pre_sql_setup
+    self.setup_query()
+  File "E:\PycharmProjects\virtualenvs\Django\lib\site-packages\django\db\models\sql\compiler.py", line 44, in setup_query
+    self.select, self.klass_info, self.annotation_col_map = self.get_select()
+  File "E:\PycharmProjects\virtualenvs\Django\lib\site-packages\django\db\models\sql\compiler.py", line 252, in get_select
+    sql, params = self.compile(col, select_format=True)
+  File "E:\PycharmProjects\virtualenvs\Django\lib\site-packages\django\db\models\sql\compiler.py", line 402, in compile
+    sql, params = node.as_sql(self, self.connection)
+  File "E:\PycharmProjects\virtualenvs\Django\lib\site-packages\django\db\models\expressions.py", line 734, in as_sql
+    return "%s.%s" % (qn(self.alias), qn(self.target.column)), []
+  File "E:\PycharmProjects\virtualenvs\Django\lib\site-packages\django\db\models\sql\compiler.py", line 393, in quote_name_unless_alias
+    r = self.connection.ops.quote_name(name)
+  File "E:\PycharmProjects\virtualenvs\Django\lib\site-packages\django\db\backends\dummy\base.py", line 20, in complain
+    raise ImproperlyConfigured("settings.DATABASES is improperly configured. "
+django.core.exceptions.ImproperlyConfigured: settings.DATABASES is improperly configured. Please supply the ENGINE value. Check settings documentation for more details.
+ERROR 2020-06-19 14:56:40,116 basehttp 154 "GET / HTTP/1.1" 500 143273
+INFO 2020-06-19 14:57:18,943 autoreload 578 Watching for file changes with StatReloader
+INFO 2020-06-19 14:57:20,674 basehttp 154 "GET / HTTP/1.1" 200 6726
+INFO 2020-06-19 14:57:20,700 basehttp 154 "GET /static/md_css/monokai.css HTTP/1.1" 200 4118
+INFO 2020-06-19 14:57:20,700 basehttp 154 "GET /static/common/common.css HTTP/1.1" 200 381
+INFO 2020-06-19 14:57:20,703 basehttp 154 "GET /static/common/jquery.pagination.css HTTP/1.1" 200 523
+INFO 2020-06-19 14:57:20,705 basehttp 154 "GET /static/bootstrap/css/bootstrap.min.css HTTP/1.1" 200 140942
+INFO 2020-06-19 14:57:20,705 basehttp 154 "GET /static/js/axios-0.18.0.min.js HTTP/1.1" 200 12941
+INFO 2020-06-19 14:57:20,712 basehttp 154 "GET /static/js/host.js HTTP/1.1" 200 35
+INFO 2020-06-19 14:57:20,713 basehttp 154 "GET /static/js/jquery-1.12.4.min.js HTTP/1.1" 200 97163
+INFO 2020-06-19 14:57:20,714 basehttp 154 "GET /static/js/vue-2.5.16.js HTTP/1.1" 200 289307
+INFO 2020-06-19 14:57:20,716 basehttp 154 "GET /media/article/20200618/%E4%B8%80%E4%BA%BA%E4%B9%8B%E4%B8%8B.png HTTP/1.1" 200 15353
+INFO 2020-06-19 14:57:20,742 basehttp 154 "GET /static/js/common.js HTTP/1.1" 200 891
+INFO 2020-06-19 14:57:20,743 basehttp 154 "GET /static/js/index.js HTTP/1.1" 200 529
+INFO 2020-06-19 14:57:20,766 basehttp 154 "GET /static/js/jquery.pagination.min.js HTTP/1.1" 200 2935
+INFO 2020-06-19 14:57:24,523 basehttp 154 "GET /?cat_id=7 HTTP/1.1" 200 5272
+INFO 2020-06-19 14:57:24,543 basehttp 154 "GET /static/bootstrap/css/bootstrap.min.css HTTP/1.1" 304 0
+INFO 2020-06-19 14:57:24,547 basehttp 154 "GET /static/common/common.css HTTP/1.1" 304 0
+INFO 2020-06-19 14:57:24,547 basehttp 154 "GET /static/common/jquery.pagination.css HTTP/1.1" 304 0
+INFO 2020-06-19 14:57:24,547 basehttp 154 "GET /static/js/axios-0.18.0.min.js HTTP/1.1" 304 0
+INFO 2020-06-19 14:57:24,548 basehttp 154 "GET /static/js/vue-2.5.16.js HTTP/1.1" 304 0
+INFO 2020-06-19 14:57:24,548 basehttp 154 "GET /static/md_css/monokai.css HTTP/1.1" 304 0
+INFO 2020-06-19 14:57:24,550 basehttp 154 "GET /static/js/jquery-1.12.4.min.js HTTP/1.1" 304 0
+INFO 2020-06-19 14:57:24,556 basehttp 154 "GET /static/js/host.js HTTP/1.1" 304 0
+INFO 2020-06-19 14:57:24,557 basehttp 154 "GET /static/js/common.js HTTP/1.1" 304 0
+INFO 2020-06-19 14:57:24,558 basehttp 154 "GET /static/js/index.js HTTP/1.1" 304 0
+INFO 2020-06-19 14:57:24,558 basehttp 154 "GET /static/js/jquery.pagination.min.js HTTP/1.1" 304 0
+INFO 2020-06-19 14:57:25,200 basehttp 154 "GET /?cat_id=6 HTTP/1.1" 200 5272
+INFO 2020-06-19 14:57:25,222 basehttp 154 "GET /static/common/jquery.pagination.css HTTP/1.1" 304 0
+INFO 2020-06-19 14:57:25,225 basehttp 154 "GET /static/js/axios-0.18.0.min.js HTTP/1.1" 304 0
+INFO 2020-06-19 14:57:25,225 basehttp 154 "GET /static/common/common.css HTTP/1.1" 304 0
+INFO 2020-06-19 14:57:25,225 basehttp 154 "GET /static/md_css/monokai.css HTTP/1.1" 304 0
+INFO 2020-06-19 14:57:25,226 basehttp 154 "GET /static/js/vue-2.5.16.js HTTP/1.1" 304 0
+INFO 2020-06-19 14:57:25,226 basehttp 154 "GET /static/bootstrap/css/bootstrap.min.css HTTP/1.1" 304 0
+INFO 2020-06-19 14:57:25,231 basehttp 154 "GET /static/js/jquery-1.12.4.min.js HTTP/1.1" 304 0
+INFO 2020-06-19 14:57:25,232 basehttp 154 "GET /static/js/host.js HTTP/1.1" 304 0
+INFO 2020-06-19 14:57:25,233 basehttp 154 "GET /static/js/common.js HTTP/1.1" 304 0
+INFO 2020-06-19 14:57:25,234 basehttp 154 "GET /static/js/index.js HTTP/1.1" 304 0
+INFO 2020-06-19 14:57:25,234 basehttp 154 "GET /static/js/jquery.pagination.min.js HTTP/1.1" 304 0
+INFO 2020-06-19 14:57:25,775 basehttp 154 "GET /?cat_id=4 HTTP/1.1" 200 5272
+INFO 2020-06-19 14:57:25,795 basehttp 154 "GET /static/js/vue-2.5.16.js HTTP/1.1" 304 0
+INFO 2020-06-19 14:57:25,797 basehttp 154 "GET /static/js/axios-0.18.0.min.js HTTP/1.1" 304 0
+INFO 2020-06-19 14:57:25,798 basehttp 154 "GET /static/md_css/monokai.css HTTP/1.1" 304 0
+INFO 2020-06-19 14:57:25,798 basehttp 154 "GET /static/common/jquery.pagination.css HTTP/1.1" 304 0
+INFO 2020-06-19 14:57:25,800 basehttp 154 "GET /static/bootstrap/css/bootstrap.min.css HTTP/1.1" 304 0
+INFO 2020-06-19 14:57:25,800 basehttp 154 "GET /static/common/common.css HTTP/1.1" 304 0
+INFO 2020-06-19 14:57:25,806 basehttp 154 "GET /static/js/jquery-1.12.4.min.js HTTP/1.1" 304 0
+INFO 2020-06-19 14:57:25,806 basehttp 154 "GET /static/js/host.js HTTP/1.1" 304 0
+INFO 2020-06-19 14:57:25,807 basehttp 154 "GET /static/js/common.js HTTP/1.1" 304 0
+INFO 2020-06-19 14:57:25,808 basehttp 154 "GET /static/js/index.js HTTP/1.1" 304 0
+INFO 2020-06-19 14:57:25,808 basehttp 154 "GET /static/js/jquery.pagination.min.js HTTP/1.1" 304 0
+INFO 2020-06-19 14:57:26,176 basehttp 154 "GET /?cat_id=2 HTTP/1.1" 200 5272
+INFO 2020-06-19 14:57:26,196 basehttp 154 "GET /static/common/common.css HTTP/1.1" 304 0
+INFO 2020-06-19 14:57:26,197 basehttp 154 "GET /static/js/axios-0.18.0.min.js HTTP/1.1" 304 0
+INFO 2020-06-19 14:57:26,197 basehttp 154 "GET /static/bootstrap/css/bootstrap.min.css HTTP/1.1" 304 0
+INFO 2020-06-19 14:57:26,198 basehttp 154 "GET /static/js/vue-2.5.16.js HTTP/1.1" 304 0
+INFO 2020-06-19 14:57:26,199 basehttp 154 "GET /static/md_css/monokai.css HTTP/1.1" 304 0
+INFO 2020-06-19 14:57:26,200 basehttp 154 "GET /static/common/jquery.pagination.css HTTP/1.1" 304 0
+INFO 2020-06-19 14:57:26,206 basehttp 154 "GET /static/js/jquery-1.12.4.min.js HTTP/1.1" 304 0
+INFO 2020-06-19 14:57:26,207 basehttp 154 "GET /static/js/host.js HTTP/1.1" 304 0
+INFO 2020-06-19 14:57:26,207 basehttp 154 "GET /static/js/common.js HTTP/1.1" 304 0
+INFO 2020-06-19 14:57:26,208 basehttp 154 "GET /static/js/index.js HTTP/1.1" 304 0
+INFO 2020-06-19 14:57:26,209 basehttp 154 "GET /static/js/jquery.pagination.min.js HTTP/1.1" 304 0
+INFO 2020-06-19 14:57:26,506 basehttp 154 "GET /?cat_id=1 HTTP/1.1" 200 6726
+INFO 2020-06-19 14:57:26,526 basehttp 154 "GET /static/common/jquery.pagination.css HTTP/1.1" 304 0
+INFO 2020-06-19 14:57:26,526 basehttp 154 "GET /static/bootstrap/css/bootstrap.min.css HTTP/1.1" 304 0
+INFO 2020-06-19 14:57:26,528 basehttp 154 "GET /static/common/common.css HTTP/1.1" 304 0
+INFO 2020-06-19 14:57:26,528 basehttp 154 "GET /static/md_css/monokai.css HTTP/1.1" 304 0
+INFO 2020-06-19 14:57:26,529 basehttp 154 "GET /static/js/vue-2.5.16.js HTTP/1.1" 304 0
+INFO 2020-06-19 14:57:26,529 basehttp 154 "GET /static/js/axios-0.18.0.min.js HTTP/1.1" 304 0
+INFO 2020-06-19 14:57:26,534 basehttp 154 "GET /static/js/jquery-1.12.4.min.js HTTP/1.1" 304 0
+INFO 2020-06-19 14:57:26,535 basehttp 154 "GET /static/js/host.js HTTP/1.1" 304 0
+INFO 2020-06-19 14:57:26,536 basehttp 154 "GET /static/js/common.js HTTP/1.1" 304 0
+INFO 2020-06-19 14:57:26,545 basehttp 154 "GET /static/js/index.js HTTP/1.1" 304 0
+INFO 2020-06-19 14:57:26,545 basehttp 154 "GET /static/js/jquery.pagination.min.js HTTP/1.1" 304 0
+INFO 2020-06-19 14:57:27,323 basehttp 154 "GET / HTTP/1.1" 200 6726
+INFO 2020-06-19 14:57:27,344 basehttp 154 "GET /static/md_css/monokai.css HTTP/1.1" 304 0
+INFO 2020-06-19 14:57:27,345 basehttp 154 "GET /static/common/jquery.pagination.css HTTP/1.1" 304 0
+INFO 2020-06-19 14:57:27,346 basehttp 154 "GET /static/bootstrap/css/bootstrap.min.css HTTP/1.1" 304 0
+INFO 2020-06-19 14:57:27,347 basehttp 154 "GET /static/js/vue-2.5.16.js HTTP/1.1" 304 0
+INFO 2020-06-19 14:57:27,347 basehttp 154 "GET /static/common/common.css HTTP/1.1" 304 0
+INFO 2020-06-19 14:57:27,348 basehttp 154 "GET /static/js/axios-0.18.0.min.js HTTP/1.1" 304 0
+INFO 2020-06-19 14:57:27,351 basehttp 154 "GET /static/js/jquery-1.12.4.min.js HTTP/1.1" 304 0
+INFO 2020-06-19 14:57:27,353 basehttp 154 "GET /static/js/host.js HTTP/1.1" 304 0
+INFO 2020-06-19 14:57:27,353 basehttp 154 "GET /static/js/common.js HTTP/1.1" 304 0
+INFO 2020-06-19 14:57:27,362 basehttp 154 "GET /static/js/index.js HTTP/1.1" 304 0
+INFO 2020-06-19 14:57:27,362 basehttp 154 "GET /static/js/jquery.pagination.min.js HTTP/1.1" 304 0
+INFO 2020-06-19 14:57:28,184 basehttp 154 "GET /?cat_id=1 HTTP/1.1" 200 6726
+INFO 2020-06-19 14:57:28,205 basehttp 154 "GET /static/bootstrap/css/bootstrap.min.css HTTP/1.1" 304 0
+INFO 2020-06-19 14:57:28,207 basehttp 154 "GET /static/common/common.css HTTP/1.1" 304 0
+INFO 2020-06-19 14:57:28,209 basehttp 154 "GET /static/common/jquery.pagination.css HTTP/1.1" 304 0
+INFO 2020-06-19 14:57:28,209 basehttp 154 "GET /static/js/axios-0.18.0.min.js HTTP/1.1" 304 0
+INFO 2020-06-19 14:57:28,209 basehttp 154 "GET /static/md_css/monokai.css HTTP/1.1" 304 0
+INFO 2020-06-19 14:57:28,210 basehttp 154 "GET /static/js/vue-2.5.16.js HTTP/1.1" 304 0
+INFO 2020-06-19 14:57:28,212 basehttp 154 "GET /static/js/jquery-1.12.4.min.js HTTP/1.1" 304 0
+INFO 2020-06-19 14:57:28,214 basehttp 154 "GET /static/js/host.js HTTP/1.1" 304 0
+INFO 2020-06-19 14:57:28,216 basehttp 154 "GET /static/js/common.js HTTP/1.1" 304 0
+INFO 2020-06-19 14:57:28,225 basehttp 154 "GET /static/js/index.js HTTP/1.1" 304 0
+INFO 2020-06-19 14:57:28,226 basehttp 154 "GET /static/js/jquery.pagination.min.js HTTP/1.1" 304 0
+INFO 2020-06-19 14:57:28,589 basehttp 154 "GET /?cat_id=2 HTTP/1.1" 200 5272
+INFO 2020-06-19 14:57:28,610 basehttp 154 "GET /static/common/common.css HTTP/1.1" 304 0
+INFO 2020-06-19 14:57:28,611 basehttp 154 "GET /static/md_css/monokai.css HTTP/1.1" 304 0
+INFO 2020-06-19 14:57:28,611 basehttp 154 "GET /static/common/jquery.pagination.css HTTP/1.1" 304 0
+INFO 2020-06-19 14:57:28,612 basehttp 154 "GET /static/js/axios-0.18.0.min.js HTTP/1.1" 304 0
+INFO 2020-06-19 14:57:28,612 basehttp 154 "GET /static/js/vue-2.5.16.js HTTP/1.1" 304 0
+INFO 2020-06-19 14:57:28,612 basehttp 154 "GET /static/bootstrap/css/bootstrap.min.css HTTP/1.1" 304 0
+INFO 2020-06-19 14:57:28,618 basehttp 154 "GET /static/js/host.js HTTP/1.1" 304 0
+INFO 2020-06-19 14:57:28,619 basehttp 154 "GET /static/js/jquery-1.12.4.min.js HTTP/1.1" 304 0
+INFO 2020-06-19 14:57:28,619 basehttp 154 "GET /static/js/common.js HTTP/1.1" 304 0
+INFO 2020-06-19 14:57:28,620 basehttp 154 "GET /static/js/index.js HTTP/1.1" 304 0
+INFO 2020-06-19 14:57:28,621 basehttp 154 "GET /static/js/jquery.pagination.min.js HTTP/1.1" 304 0
+INFO 2020-06-19 14:57:29,384 basehttp 154 "GET /?cat_id=5 HTTP/1.1" 200 5272
+INFO 2020-06-19 14:57:29,404 basehttp 154 "GET /static/bootstrap/css/bootstrap.min.css HTTP/1.1" 304 0
+INFO 2020-06-19 14:57:29,405 basehttp 154 "GET /static/common/jquery.pagination.css HTTP/1.1" 304 0
+INFO 2020-06-19 14:57:29,408 basehttp 154 "GET /static/md_css/monokai.css HTTP/1.1" 304 0
+INFO 2020-06-19 14:57:29,409 basehttp 154 "GET /static/common/common.css HTTP/1.1" 304 0
+INFO 2020-06-19 14:57:29,409 basehttp 154 "GET /static/js/vue-2.5.16.js HTTP/1.1" 304 0
+INFO 2020-06-19 14:57:29,410 basehttp 154 "GET /static/js/axios-0.18.0.min.js HTTP/1.1" 304 0
+INFO 2020-06-19 14:57:29,414 basehttp 154 "GET /static/js/jquery-1.12.4.min.js HTTP/1.1" 304 0
+INFO 2020-06-19 14:57:29,414 basehttp 154 "GET /static/js/host.js HTTP/1.1" 304 0
+INFO 2020-06-19 14:57:29,415 basehttp 154 "GET /static/js/common.js HTTP/1.1" 304 0
+INFO 2020-06-19 14:57:29,416 basehttp 154 "GET /static/js/index.js HTTP/1.1" 304 0
+INFO 2020-06-19 14:57:29,416 basehttp 154 "GET /static/js/jquery.pagination.min.js HTTP/1.1" 304 0
+INFO 2020-06-19 14:57:29,793 basehttp 154 "GET /?cat_id=7 HTTP/1.1" 200 5272
+INFO 2020-06-19 14:57:29,814 basehttp 154 "GET /static/bootstrap/css/bootstrap.min.css HTTP/1.1" 304 0
+INFO 2020-06-19 14:57:29,816 basehttp 154 "GET /static/md_css/monokai.css HTTP/1.1" 304 0
+INFO 2020-06-19 14:57:29,817 basehttp 154 "GET /static/common/jquery.pagination.css HTTP/1.1" 304 0
+INFO 2020-06-19 14:57:29,817 basehttp 154 "GET /static/common/common.css HTTP/1.1" 304 0
+INFO 2020-06-19 14:57:29,820 basehttp 154 "GET /static/js/vue-2.5.16.js HTTP/1.1" 304 0
+INFO 2020-06-19 14:57:29,821 basehttp 154 "GET /static/js/axios-0.18.0.min.js HTTP/1.1" 304 0
+INFO 2020-06-19 14:57:29,824 basehttp 154 "GET /static/js/jquery-1.12.4.min.js HTTP/1.1" 304 0
+INFO 2020-06-19 14:57:29,825 basehttp 154 "GET /static/js/common.js HTTP/1.1" 304 0
+INFO 2020-06-19 14:57:29,825 basehttp 154 "GET /static/js/host.js HTTP/1.1" 304 0
+INFO 2020-06-19 14:57:29,826 basehttp 154 "GET /static/js/jquery.pagination.min.js HTTP/1.1" 304 0
+INFO 2020-06-19 14:57:29,827 basehttp 154 "GET /static/js/index.js HTTP/1.1" 304 0
+INFO 2020-06-19 14:57:30,322 basehttp 154 "GET /?cat_id=6 HTTP/1.1" 200 5272
+INFO 2020-06-19 14:57:30,343 basehttp 154 "GET /static/bootstrap/css/bootstrap.min.css HTTP/1.1" 304 0
+INFO 2020-06-19 14:57:30,345 basehttp 154 "GET /static/common/jquery.pagination.css HTTP/1.1" 304 0
+INFO 2020-06-19 14:57:30,346 basehttp 154 "GET /static/md_css/monokai.css HTTP/1.1" 304 0
+INFO 2020-06-19 14:57:30,348 basehttp 154 "GET /static/js/axios-0.18.0.min.js HTTP/1.1" 304 0
+INFO 2020-06-19 14:57:30,349 basehttp 154 "GET /static/common/common.css HTTP/1.1" 304 0
+INFO 2020-06-19 14:57:30,350 basehttp 154 "GET /static/js/vue-2.5.16.js HTTP/1.1" 304 0
+INFO 2020-06-19 14:57:30,355 basehttp 154 "GET /static/js/jquery-1.12.4.min.js HTTP/1.1" 304 0
+INFO 2020-06-19 14:57:30,356 basehttp 154 "GET /static/js/host.js HTTP/1.1" 304 0
+INFO 2020-06-19 14:57:30,357 basehttp 154 "GET /static/js/jquery.pagination.min.js HTTP/1.1" 304 0
+INFO 2020-06-19 14:57:30,358 basehttp 154 "GET /static/js/index.js HTTP/1.1" 304 0
+INFO 2020-06-19 14:57:30,358 basehttp 154 "GET /static/js/common.js HTTP/1.1" 304 0
+INFO 2020-06-19 14:57:30,636 basehttp 154 "GET /?cat_id=4 HTTP/1.1" 200 5272
+INFO 2020-06-19 14:57:30,657 basehttp 154 "GET /static/bootstrap/css/bootstrap.min.css HTTP/1.1" 304 0
+INFO 2020-06-19 14:57:30,659 basehttp 154 "GET /static/js/vue-2.5.16.js HTTP/1.1" 304 0
+INFO 2020-06-19 14:57:30,661 basehttp 154 "GET /static/js/axios-0.18.0.min.js HTTP/1.1" 304 0
+INFO 2020-06-19 14:57:30,661 basehttp 154 "GET /static/common/common.css HTTP/1.1" 304 0
+INFO 2020-06-19 14:57:30,661 basehttp 154 "GET /static/md_css/monokai.css HTTP/1.1" 304 0
+INFO 2020-06-19 14:57:30,661 basehttp 154 "GET /static/common/jquery.pagination.css HTTP/1.1" 304 0
+INFO 2020-06-19 14:57:30,666 basehttp 154 "GET /static/js/jquery-1.12.4.min.js HTTP/1.1" 304 0
+INFO 2020-06-19 14:57:30,668 basehttp 154 "GET /static/js/host.js HTTP/1.1" 304 0
+INFO 2020-06-19 14:57:30,669 basehttp 154 "GET /static/js/common.js HTTP/1.1" 304 0
+INFO 2020-06-19 14:57:30,670 basehttp 154 "GET /static/js/index.js HTTP/1.1" 304 0
+INFO 2020-06-19 14:57:30,671 basehttp 154 "GET /static/js/jquery.pagination.min.js HTTP/1.1" 304 0
+INFO 2020-06-19 14:57:31,139 basehttp 154 "GET /?cat_id=5 HTTP/1.1" 200 5272
+INFO 2020-06-19 14:57:31,162 basehttp 154 "GET /static/js/vue-2.5.16.js HTTP/1.1" 304 0
+INFO 2020-06-19 14:57:31,163 basehttp 154 "GET /static/common/jquery.pagination.css HTTP/1.1" 304 0
+INFO 2020-06-19 14:57:31,164 basehttp 154 "GET /static/common/common.css HTTP/1.1" 304 0
+INFO 2020-06-19 14:57:31,165 basehttp 154 "GET /static/js/axios-0.18.0.min.js HTTP/1.1" 304 0
+INFO 2020-06-19 14:57:31,165 basehttp 154 "GET /static/md_css/monokai.css HTTP/1.1" 304 0
+INFO 2020-06-19 14:57:31,166 basehttp 154 "GET /static/bootstrap/css/bootstrap.min.css HTTP/1.1" 304 0
+INFO 2020-06-19 14:57:31,170 basehttp 154 "GET /static/js/jquery-1.12.4.min.js HTTP/1.1" 304 0
+INFO 2020-06-19 14:57:31,171 basehttp 154 "GET /static/js/host.js HTTP/1.1" 304 0
+INFO 2020-06-19 14:57:31,173 basehttp 154 "GET /static/js/common.js HTTP/1.1" 304 0
+INFO 2020-06-19 14:57:31,173 basehttp 154 "GET /static/js/index.js HTTP/1.1" 304 0
+INFO 2020-06-19 14:57:31,173 basehttp 154 "GET /static/js/jquery.pagination.min.js HTTP/1.1" 304 0
+INFO 2020-06-19 14:57:31,436 basehttp 154 "GET /?cat_id=3 HTTP/1.1" 200 5272
+INFO 2020-06-19 14:57:31,456 basehttp 154 "GET /static/bootstrap/css/bootstrap.min.css HTTP/1.1" 304 0
+INFO 2020-06-19 14:57:31,458 basehttp 154 "GET /static/common/common.css HTTP/1.1" 304 0
+INFO 2020-06-19 14:57:31,459 basehttp 154 "GET /static/md_css/monokai.css HTTP/1.1" 304 0
+INFO 2020-06-19 14:57:31,459 basehttp 154 "GET /static/js/vue-2.5.16.js HTTP/1.1" 304 0
+INFO 2020-06-19 14:57:31,459 basehttp 154 "GET /static/common/jquery.pagination.css HTTP/1.1" 304 0
+INFO 2020-06-19 14:57:31,460 basehttp 154 "GET /static/js/axios-0.18.0.min.js HTTP/1.1" 304 0
+INFO 2020-06-19 14:57:31,465 basehttp 154 "GET /static/js/jquery-1.12.4.min.js HTTP/1.1" 304 0
+INFO 2020-06-19 14:57:31,466 basehttp 154 "GET /static/js/host.js HTTP/1.1" 304 0
+INFO 2020-06-19 14:57:31,467 basehttp 154 "GET /static/js/common.js HTTP/1.1" 304 0
+INFO 2020-06-19 14:57:31,467 basehttp 154 "GET /static/js/index.js HTTP/1.1" 304 0
+INFO 2020-06-19 14:57:31,468 basehttp 154 "GET /static/js/jquery.pagination.min.js HTTP/1.1" 304 0
+INFO 2020-06-19 14:57:31,739 basehttp 154 "GET /?cat_id=1 HTTP/1.1" 200 6726
+INFO 2020-06-19 14:57:31,759 basehttp 154 "GET /static/md_css/monokai.css HTTP/1.1" 304 0
+INFO 2020-06-19 14:57:31,759 basehttp 154 "GET /static/js/axios-0.18.0.min.js HTTP/1.1" 304 0
+INFO 2020-06-19 14:57:31,760 basehttp 154 "GET /static/common/common.css HTTP/1.1" 304 0
+INFO 2020-06-19 14:57:31,760 basehttp 154 "GET /static/bootstrap/css/bootstrap.min.css HTTP/1.1" 304 0
+INFO 2020-06-19 14:57:31,761 basehttp 154 "GET /static/js/vue-2.5.16.js HTTP/1.1" 304 0
+INFO 2020-06-19 14:57:31,761 basehttp 154 "GET /static/common/jquery.pagination.css HTTP/1.1" 304 0
+INFO 2020-06-19 14:57:31,764 basehttp 154 "GET /static/js/jquery-1.12.4.min.js HTTP/1.1" 304 0
+INFO 2020-06-19 14:57:31,768 basehttp 154 "GET /static/js/host.js HTTP/1.1" 304 0
+INFO 2020-06-19 14:57:31,769 basehttp 154 "GET /static/js/common.js HTTP/1.1" 304 0
+INFO 2020-06-19 14:57:31,776 basehttp 154 "GET /static/js/jquery.pagination.min.js HTTP/1.1" 304 0
+INFO 2020-06-19 14:57:31,776 basehttp 154 "GET /static/js/index.js HTTP/1.1" 304 0
+INFO 2020-06-19 14:57:32,003 basehttp 154 "GET /?cat_id=1 HTTP/1.1" 200 6726
+INFO 2020-06-19 14:57:32,023 basehttp 154 "GET /static/js/axios-0.18.0.min.js HTTP/1.1" 304 0
+INFO 2020-06-19 14:57:32,023 basehttp 154 "GET /static/bootstrap/css/bootstrap.min.css HTTP/1.1" 304 0
+INFO 2020-06-19 14:57:32,024 basehttp 154 "GET /static/common/common.css HTTP/1.1" 304 0
+INFO 2020-06-19 14:57:32,024 basehttp 154 "GET /static/md_css/monokai.css HTTP/1.1" 304 0
+INFO 2020-06-19 14:57:32,024 basehttp 154 "GET /static/js/vue-2.5.16.js HTTP/1.1" 304 0
+INFO 2020-06-19 14:57:32,026 basehttp 154 "GET /static/common/jquery.pagination.css HTTP/1.1" 304 0
+INFO 2020-06-19 14:57:32,030 basehttp 154 "GET /static/js/jquery-1.12.4.min.js HTTP/1.1" 304 0
+INFO 2020-06-19 14:57:32,032 basehttp 154 "GET /static/js/common.js HTTP/1.1" 304 0
+INFO 2020-06-19 14:57:32,032 basehttp 154 "GET /static/js/host.js HTTP/1.1" 304 0
+INFO 2020-06-19 14:57:32,039 basehttp 154 "GET /static/js/index.js HTTP/1.1" 304 0
+INFO 2020-06-19 14:57:32,039 basehttp 154 "GET /static/js/jquery.pagination.min.js HTTP/1.1" 304 0
+INFO 2020-06-19 14:57:32,487 basehttp 154 "GET /?cat_id=2 HTTP/1.1" 200 5272
+INFO 2020-06-19 14:57:32,511 basehttp 154 "GET /static/md_css/monokai.css HTTP/1.1" 304 0
+INFO 2020-06-19 14:57:32,512 basehttp 154 "GET /static/js/vue-2.5.16.js HTTP/1.1" 304 0
+INFO 2020-06-19 14:57:32,514 basehttp 154 "GET /static/common/jquery.pagination.css HTTP/1.1" 304 0
+INFO 2020-06-19 14:57:32,515 basehttp 154 "GET /static/bootstrap/css/bootstrap.min.css HTTP/1.1" 304 0
+INFO 2020-06-19 14:57:32,515 basehttp 154 "GET /static/common/common.css HTTP/1.1" 304 0
+INFO 2020-06-19 14:57:32,516 basehttp 154 "GET /static/js/axios-0.18.0.min.js HTTP/1.1" 304 0
+INFO 2020-06-19 14:57:32,521 basehttp 154 "GET /static/js/jquery-1.12.4.min.js HTTP/1.1" 304 0
+INFO 2020-06-19 14:57:32,522 basehttp 154 "GET /static/js/host.js HTTP/1.1" 304 0
+INFO 2020-06-19 14:57:32,523 basehttp 154 "GET /static/js/index.js HTTP/1.1" 304 0
+INFO 2020-06-19 14:57:32,523 basehttp 154 "GET /static/js/common.js HTTP/1.1" 304 0
+INFO 2020-06-19 14:57:32,524 basehttp 154 "GET /static/js/jquery.pagination.min.js HTTP/1.1" 304 0
+INFO 2020-06-19 14:57:33,351 basehttp 154 "GET /?cat_id=7 HTTP/1.1" 200 5272
+INFO 2020-06-19 14:57:33,374 basehttp 154 "GET /static/bootstrap/css/bootstrap.min.css HTTP/1.1" 304 0
+INFO 2020-06-19 14:57:33,374 basehttp 154 "GET /static/common/common.css HTTP/1.1" 304 0
+INFO 2020-06-19 14:57:33,374 basehttp 154 "GET /static/common/jquery.pagination.css HTTP/1.1" 304 0
+INFO 2020-06-19 14:57:33,375 basehttp 154 "GET /static/md_css/monokai.css HTTP/1.1" 304 0
+INFO 2020-06-19 14:57:33,375 basehttp 154 "GET /static/js/axios-0.18.0.min.js HTTP/1.1" 304 0
+INFO 2020-06-19 14:57:33,376 basehttp 154 "GET /static/js/vue-2.5.16.js HTTP/1.1" 304 0
+INFO 2020-06-19 14:57:33,383 basehttp 154 "GET /static/js/common.js HTTP/1.1" 304 0
+INFO 2020-06-19 14:57:33,383 basehttp 154 "GET /static/js/host.js HTTP/1.1" 304 0
+INFO 2020-06-19 14:57:33,384 basehttp 154 "GET /static/js/jquery-1.12.4.min.js HTTP/1.1" 304 0
+INFO 2020-06-19 14:57:33,384 basehttp 154 "GET /static/js/jquery.pagination.min.js HTTP/1.1" 304 0
+INFO 2020-06-19 14:57:33,385 basehttp 154 "GET /static/js/index.js HTTP/1.1" 304 0
+INFO 2020-06-19 14:57:34,136 basehttp 154 "GET / HTTP/1.1" 200 6726
+INFO 2020-06-19 14:57:34,158 basehttp 154 "GET /static/js/axios-0.18.0.min.js HTTP/1.1" 304 0
+INFO 2020-06-19 14:57:34,158 basehttp 154 "GET /static/bootstrap/css/bootstrap.min.css HTTP/1.1" 304 0
+INFO 2020-06-19 14:57:34,160 basehttp 154 "GET /static/md_css/monokai.css HTTP/1.1" 304 0
+INFO 2020-06-19 14:57:34,160 basehttp 154 "GET /static/common/jquery.pagination.css HTTP/1.1" 304 0
+INFO 2020-06-19 14:57:34,161 basehttp 154 "GET /static/common/common.css HTTP/1.1" 304 0
+INFO 2020-06-19 14:57:34,161 basehttp 154 "GET /static/js/vue-2.5.16.js HTTP/1.1" 304 0
+INFO 2020-06-19 14:57:34,165 basehttp 154 "GET /static/js/jquery-1.12.4.min.js HTTP/1.1" 304 0
+INFO 2020-06-19 14:57:34,166 basehttp 154 "GET /static/js/host.js HTTP/1.1" 304 0
+INFO 2020-06-19 14:57:34,167 basehttp 154 "GET /static/js/common.js HTTP/1.1" 304 0
+INFO 2020-06-19 14:57:34,176 basehttp 154 "GET /static/js/jquery.pagination.min.js HTTP/1.1" 304 0
+INFO 2020-06-19 14:57:34,176 basehttp 154 "GET /static/js/index.js HTTP/1.1" 304 0
+INFO 2020-06-19 14:58:11,508 basehttp 154 "GET /admin HTTP/1.1" 301 0
+INFO 2020-06-19 14:58:11,548 basehttp 154 "GET /admin/ HTTP/1.1" 200 6270
+INFO 2020-06-19 14:58:11,568 basehttp 154 "GET /static/admin/css/dashboard.css HTTP/1.1" 200 412
+INFO 2020-06-19 14:58:11,568 basehttp 154 "GET /static/admin/css/base.css HTTP/1.1" 200 16378
+INFO 2020-06-19 14:58:11,568 basehttp 154 "GET /static/admin/css/responsive.css HTTP/1.1" 200 17944
+INFO 2020-06-19 14:58:11,578 basehttp 154 "GET /static/admin/css/fonts.css HTTP/1.1" 200 423
+INFO 2020-06-19 14:58:11,596 basehttp 154 "GET /static/admin/img/icon-addlink.svg HTTP/1.1" 200 331
+INFO 2020-06-19 14:58:11,596 basehttp 154 "GET /static/admin/img/icon-changelink.svg HTTP/1.1" 200 380
+INFO 2020-06-19 14:58:11,628 basehttp 154 "GET /static/admin/fonts/Roboto-Light-webfont.woff HTTP/1.1" 200 85692
+INFO 2020-06-19 14:58:11,630 basehttp 154 "GET /static/admin/fonts/Roboto-Bold-webfont.woff HTTP/1.1" 200 86184
+INFO 2020-06-19 14:58:11,631 basehttp 154 "GET /static/admin/fonts/Roboto-Regular-webfont.woff HTTP/1.1" 200 85876
+INFO 2020-06-19 14:58:14,167 basehttp 154 "GET / HTTP/1.1" 200 6726
+INFO 2020-06-19 14:58:14,189 basehttp 154 "GET /static/bootstrap/css/bootstrap.min.css HTTP/1.1" 304 0
+INFO 2020-06-19 14:58:14,190 basehttp 154 "GET /static/common/jquery.pagination.css HTTP/1.1" 304 0
+INFO 2020-06-19 14:58:14,191 basehttp 154 "GET /static/js/vue-2.5.16.js HTTP/1.1" 304 0
+INFO 2020-06-19 14:58:14,192 basehttp 154 "GET /static/js/axios-0.18.0.min.js HTTP/1.1" 304 0
+INFO 2020-06-19 14:58:14,193 basehttp 154 "GET /static/common/common.css HTTP/1.1" 304 0
+INFO 2020-06-19 14:58:14,193 basehttp 154 "GET /static/md_css/monokai.css HTTP/1.1" 304 0
+INFO 2020-06-19 14:58:14,197 basehttp 154 "GET /static/js/jquery-1.12.4.min.js HTTP/1.1" 304 0
+INFO 2020-06-19 14:58:14,198 basehttp 154 "GET /static/js/host.js HTTP/1.1" 304 0
+INFO 2020-06-19 14:58:14,199 basehttp 154 "GET /static/js/common.js HTTP/1.1" 304 0
+INFO 2020-06-19 14:58:14,209 basehttp 154 "GET /static/js/jquery.pagination.min.js HTTP/1.1" 304 0
+INFO 2020-06-19 14:58:14,210 basehttp 154 "GET /static/js/index.js HTTP/1.1" 304 0
+INFO 2020-06-19 16:12:54,079 autoreload 578 Watching for file changes with StatReloader
+INFO 2020-06-19 16:13:14,857 autoreload 578 Watching for file changes with StatReloader
+INFO 2020-06-19 16:13:16,544 basehttp 154 "GET / HTTP/1.1" 200 4966
+INFO 2020-06-19 16:13:16,567 basehttp 154 "GET /static/md_css/monokai.css HTTP/1.1" 200 4118
+INFO 2020-06-19 16:13:16,568 basehttp 154 "GET /static/common/jquery.pagination.css HTTP/1.1" 304 0
+INFO 2020-06-19 16:13:16,569 basehttp 154 "GET /static/common/common.css HTTP/1.1" 304 0
+INFO 2020-06-19 16:13:16,571 basehttp 154 "GET /static/bootstrap/css/bootstrap.min.css HTTP/1.1" 200 140942
+INFO 2020-06-19 16:13:16,572 basehttp 154 "GET /static/js/axios-0.18.0.min.js HTTP/1.1" 200 12941
+INFO 2020-06-19 16:13:16,573 basehttp 154 "GET /static/js/jquery-1.12.4.min.js HTTP/1.1" 304 0
+INFO 2020-06-19 16:13:16,576 basehttp 154 "GET /static/js/vue-2.5.16.js HTTP/1.1" 200 289307
+INFO 2020-06-19 16:13:16,578 basehttp 154 "GET /static/js/host.js HTTP/1.1" 200 35
+INFO 2020-06-19 16:13:16,609 basehttp 154 "GET /static/js/common.js HTTP/1.1" 200 891
+INFO 2020-06-19 16:13:16,610 basehttp 154 "GET /static/js/index.js HTTP/1.1" 200 529
+INFO 2020-06-19 16:13:16,616 basehttp 154 "GET /static/js/jquery.pagination.min.js HTTP/1.1" 200 2935
+INFO 2020-06-19 16:13:18,758 basehttp 154 "GET /login/ HTTP/1.1" 200 3191
+INFO 2020-06-19 16:13:18,777 basehttp 154 "GET /static/bootstrap/css/bootstrap.min.css HTTP/1.1" 304 0
+INFO 2020-06-19 16:13:18,779 basehttp 154 "GET /static/js/axios-0.18.0.min.js HTTP/1.1" 304 0
+INFO 2020-06-19 16:13:18,780 basehttp 154 "GET /static/js/vue-2.5.16.js HTTP/1.1" 304 0
+INFO 2020-06-19 16:13:18,781 basehttp 154 "GET /static/js/host.js HTTP/1.1" 304 0
+INFO 2020-06-19 16:13:18,781 basehttp 154 "GET /static/js/common.js HTTP/1.1" 304 0
+INFO 2020-06-19 16:13:18,782 basehttp 154 "GET /static/js/login.js HTTP/1.1" 200 677
+INFO 2020-06-19 16:13:20,303 basehttp 154 "GET /register/ HTTP/1.1" 200 5316
+INFO 2020-06-19 16:13:20,324 basehttp 154 "GET /static/bootstrap/css/bootstrap.min.css HTTP/1.1" 304 0
+INFO 2020-06-19 16:13:20,325 basehttp 154 "GET /static/js/host.js HTTP/1.1" 304 0
+INFO 2020-06-19 16:13:20,326 basehttp 154 "GET /static/js/common.js HTTP/1.1" 304 0
+INFO 2020-06-19 16:13:20,326 basehttp 154 "GET /static/js/axios-0.18.0.min.js HTTP/1.1" 304 0
+INFO 2020-06-19 16:13:20,327 basehttp 154 "GET /static/js/register.js HTTP/1.1" 200 6407
+INFO 2020-06-19 16:13:20,328 basehttp 154 "GET /static/js/vue-2.5.16.js HTTP/1.1" 304 0
+INFO 2020-06-19 16:13:20,386 basehttp 154 "GET /imagecode/?uuid=07525fb3-da4c-470b-9167-3211661fbfb6 HTTP/1.1" 200 3394
+INFO 2020-06-19 16:13:22,294 basehttp 154 "GET /login/ HTTP/1.1" 200 3191
+INFO 2020-06-19 16:13:22,314 basehttp 154 "GET /static/bootstrap/css/bootstrap.min.css HTTP/1.1" 304 0
+INFO 2020-06-19 16:13:22,316 basehttp 154 "GET /static/js/login.js HTTP/1.1" 304 0
+INFO 2020-06-19 16:13:22,316 basehttp 154 "GET /static/js/host.js HTTP/1.1" 304 0
+INFO 2020-06-19 16:13:22,316 basehttp 154 "GET /static/js/common.js HTTP/1.1" 304 0
+INFO 2020-06-19 16:13:22,317 basehttp 154 "GET /static/js/axios-0.18.0.min.js HTTP/1.1" 304 0
+INFO 2020-06-19 16:13:22,317 basehttp 154 "GET /static/js/vue-2.5.16.js HTTP/1.1" 304 0
+INFO 2020-06-19 16:13:31,086 basehttp 154 "POST /login/ HTTP/1.1" 302 0
+INFO 2020-06-19 16:13:31,100 basehttp 154 "GET / HTTP/1.1" 200 4966
+INFO 2020-06-19 16:13:31,124 basehttp 154 "GET /static/common/common.css HTTP/1.1" 304 0
+INFO 2020-06-19 16:13:31,125 basehttp 154 "GET /static/js/vue-2.5.16.js HTTP/1.1" 304 0
+INFO 2020-06-19 16:13:31,125 basehttp 154 "GET /static/bootstrap/css/bootstrap.min.css HTTP/1.1" 304 0
+INFO 2020-06-19 16:13:31,126 basehttp 154 "GET /static/common/jquery.pagination.css HTTP/1.1" 304 0
+INFO 2020-06-19 16:13:31,126 basehttp 154 "GET /static/md_css/monokai.css HTTP/1.1" 304 0
+INFO 2020-06-19 16:13:31,127 basehttp 154 "GET /static/js/axios-0.18.0.min.js HTTP/1.1" 304 0
+INFO 2020-06-19 16:13:31,130 basehttp 154 "GET /static/js/jquery-1.12.4.min.js HTTP/1.1" 304 0
+INFO 2020-06-19 16:13:31,132 basehttp 154 "GET /static/js/host.js HTTP/1.1" 304 0
+INFO 2020-06-19 16:13:31,158 basehttp 154 "GET /static/js/common.js HTTP/1.1" 304 0
+INFO 2020-06-19 16:13:31,159 basehttp 154 "GET /static/js/index.js HTTP/1.1" 304 0
+INFO 2020-06-19 16:13:31,172 basehttp 154 "GET /static/js/jquery.pagination.min.js HTTP/1.1" 304 0
+INFO 2020-06-19 16:13:33,174 basehttp 154 "GET /center/ HTTP/1.1" 200 4310
+INFO 2020-06-19 16:13:33,192 basehttp 154 "GET /static/js/axios-0.18.0.min.js HTTP/1.1" 304 0
+INFO 2020-06-19 16:13:33,193 basehttp 154 "GET /static/bootstrap/css/bootstrap.min.css HTTP/1.1" 304 0
+INFO 2020-06-19 16:13:33,193 basehttp 154 "GET /static/js/host.js HTTP/1.1" 304 0
+INFO 2020-06-19 16:13:33,193 basehttp 154 "GET /static/js/vue-2.5.16.js HTTP/1.1" 304 0
+INFO 2020-06-19 16:13:33,195 basehttp 154 "GET /media/avatar/20200618/QQ.png HTTP/1.1" 200 5702
+INFO 2020-06-19 16:13:33,200 basehttp 154 "GET /static/js/common.js HTTP/1.1" 304 0
+INFO 2020-06-19 16:13:33,204 basehttp 154 "GET /static/js/center.js HTTP/1.1" 200 522
+INFO 2020-06-19 16:13:36,119 basehttp 154 "GET /write/ HTTP/1.1" 200 6214
+INFO 2020-06-19 16:13:36,140 basehttp 154 "GET /static/bootstrap/css/bootstrap.min.css HTTP/1.1" 304 0
+INFO 2020-06-19 16:13:36,141 basehttp 154 "GET /static/md_css/monokai.css HTTP/1.1" 304 0
+INFO 2020-06-19 16:13:36,141 basehttp 154 "GET /static/js/axios-0.18.0.min.js HTTP/1.1" 304 0
+INFO 2020-06-19 16:13:36,142 basehttp 154 "GET /static/js/vue-2.5.16.js HTTP/1.1" 304 0
+INFO 2020-06-19 16:13:36,142 basehttp 154 "GET /static/ckeditor/ckeditor-init.js HTTP/1.1" 200 2039
+INFO 2020-06-19 16:13:36,148 basehttp 154 "GET /static/js/common.js HTTP/1.1" 304 0
+INFO 2020-06-19 16:13:36,149 basehttp 154 "GET /static/js/host.js HTTP/1.1" 304 0
+INFO 2020-06-19 16:13:36,149 basehttp 154 "GET /static/js/write_blog.js HTTP/1.1" 200 521
+INFO 2020-06-19 16:13:36,151 basehttp 154 "GET /static/ckeditor/ckeditor/ckeditor.js HTTP/1.1" 200 690627
+INFO 2020-06-19 16:13:36,210 basehttp 154 "GET /static/ckeditor/ckeditor/config.js?t=I3I8 HTTP/1.1" 200 338
+INFO 2020-06-19 16:13:36,222 basehttp 154 "GET /static/ckeditor/ckeditor/lang/zh-cn.js?t=I3I8 HTTP/1.1" 200 18818
+INFO 2020-06-19 16:13:36,223 basehttp 154 "GET /static/ckeditor/ckeditor/skins/moono-lisa/editor.css?t=I3I8 HTTP/1.1" 200 46921
+INFO 2020-06-19 16:13:36,233 basehttp 154 "GET /static/ckeditor/ckeditor/styles.js?t=I3I8 HTTP/1.1" 200 5583
+INFO 2020-06-19 16:13:36,247 basehttp 154 "GET /static/ckeditor/ckeditor/plugins/wsc/skins/moono-lisa/wsc.css HTTP/1.1" 200 1306
+INFO 2020-06-19 16:13:36,247 basehttp 154 "GET /static/ckeditor/ckeditor/plugins/scayt/dialogs/dialog.css HTTP/1.1" 200 419
+INFO 2020-06-19 16:13:36,248 basehttp 154 "GET /static/ckeditor/ckeditor/plugins/scayt/skins/moono-lisa/scayt.css HTTP/1.1" 200 381
+INFO 2020-06-19 16:13:36,248 basehttp 154 "GET /static/ckeditor/ckeditor/plugins/tableselection/styles/tableselection.css HTTP/1.1" 200 1082
+INFO 2020-06-19 16:13:36,250 basehttp 154 "GET /static/ckeditor/ckeditor/plugins/copyformatting/styles/copyformatting.css HTTP/1.1" 200 1513
+INFO 2020-06-19 16:13:36,275 basehttp 154 "GET /static/ckeditor/ckeditor/skins/moono-lisa/icons.png?t=95e5d83 HTTP/1.1" 200 12421
+INFO 2020-06-19 16:13:36,292 basehttp 154 "GET /static/ckeditor/ckeditor/plugins/copyformatting/styles/copyformatting.css HTTP/1.1" 304 0
+INFO 2020-06-19 16:13:36,293 basehttp 154 "GET /static/ckeditor/ckeditor/plugins/tableselection/styles/tableselection.css HTTP/1.1" 304 0
+INFO 2020-06-19 16:13:36,293 basehttp 154 "GET /static/ckeditor/ckeditor/contents.css?t=I3I8 HTTP/1.1" 200 2954
+INFO 2020-06-19 16:13:38,196 basehttp 154 "GET / HTTP/1.1" 200 4966
+INFO 2020-06-19 16:13:38,218 basehttp 154 "GET /static/common/common.css HTTP/1.1" 304 0
+INFO 2020-06-19 16:13:38,219 basehttp 154 "GET /static/md_css/monokai.css HTTP/1.1" 304 0
+INFO 2020-06-19 16:13:38,220 basehttp 154 "GET /static/js/axios-0.18.0.min.js HTTP/1.1" 304 0
+INFO 2020-06-19 16:13:38,220 basehttp 154 "GET /static/bootstrap/css/bootstrap.min.css HTTP/1.1" 304 0
+INFO 2020-06-19 16:13:38,221 basehttp 154 "GET /static/js/vue-2.5.16.js HTTP/1.1" 304 0
+INFO 2020-06-19 16:13:38,221 basehttp 154 "GET /static/common/jquery.pagination.css HTTP/1.1" 304 0
+INFO 2020-06-19 16:13:38,225 basehttp 154 "GET /static/js/jquery-1.12.4.min.js HTTP/1.1" 304 0
+INFO 2020-06-19 16:13:38,227 basehttp 154 "GET /static/js/host.js HTTP/1.1" 304 0
+INFO 2020-06-19 16:13:38,228 basehttp 154 "GET /static/js/common.js HTTP/1.1" 304 0
+INFO 2020-06-19 16:13:38,239 basehttp 154 "GET /static/js/index.js HTTP/1.1" 304 0
+INFO 2020-06-19 16:13:38,239 basehttp 154 "GET /static/js/jquery.pagination.min.js HTTP/1.1" 304 0
+INFO 2020-06-19 16:23:40,590 autoreload 578 Watching for file changes with StatReloader
+INFO 2020-06-19 16:23:42,263 basehttp 154 "GET / HTTP/1.1" 200 3556
+WARNING 2020-06-19 16:23:42,337 log 228 Not Found: /static/static/bootstrap/css/bootstrap.min.css
+WARNING 2020-06-19 16:23:42,341 log 228 Not Found: /static/static/common/common.css
+WARNING 2020-06-19 16:23:42,344 log 228 Not Found: /static/static/common/jquery.pagination.css
+WARNING 2020-06-19 16:23:42,348 log 228 Not Found: /static/static/md_css/monokai.css
+WARNING 2020-06-19 16:23:42,353 log 228 Not Found: /static/static/js/vue-2.5.16.js
+WARNING 2020-06-19 16:23:42,353 basehttp 154 "GET /static/static/bootstrap/css/bootstrap.min.css HTTP/1.1" 404 3904
+WARNING 2020-06-19 16:23:42,354 basehttp 154 "GET /static/static/common/jquery.pagination.css HTTP/1.1" 404 3895
+WARNING 2020-06-19 16:23:42,355 basehttp 154 "GET /static/static/common/common.css HTTP/1.1" 404 3862
+WARNING 2020-06-19 16:23:42,357 log 228 Not Found: /static/static/js/axios-0.18.0.min.js
+WARNING 2020-06-19 16:23:42,358 basehttp 154 "GET /static/static/md_css/monokai.css HTTP/1.1" 404 3865
+WARNING 2020-06-19 16:23:42,358 basehttp 154 "GET /static/static/js/vue-2.5.16.js HTTP/1.1" 404 3859
+WARNING 2020-06-19 16:23:42,367 basehttp 154 "GET /static/static/js/axios-0.18.0.min.js HTTP/1.1" 404 3877
+INFO 2020-06-19 16:23:42,374 basehttp 154 "GET /static/js/common.js HTTP/1.1" 304 0
+INFO 2020-06-19 16:23:42,375 basehttp 154 "GET /static/js/host.js HTTP/1.1" 304 0
+INFO 2020-06-19 16:23:42,378 basehttp 154 "GET /static/js/index.js HTTP/1.1" 304 0
+INFO 2020-06-19 16:23:42,379 basehttp 154 "GET /static/js/jquery.pagination.min.js HTTP/1.1" 304 0
+WARNING 2020-06-19 16:23:42,384 log 228 Not Found: /static/static/js/jquery-1.12.4.min.js
+WARNING 2020-06-19 16:23:42,386 basehttp 154 "GET /static/static/js/jquery-1.12.4.min.js HTTP/1.1" 404 3880
+WARNING 2020-06-19 16:23:42,391 log 228 Not Found: /static/static/js/axios-0.18.0.min.js
+WARNING 2020-06-19 16:23:42,391 basehttp 154 "GET /static/static/js/axios-0.18.0.min.js HTTP/1.1" 404 3877
+WARNING 2020-06-19 16:23:42,404 log 228 Not Found: /static/static/js/jquery-1.12.4.min.js
+WARNING 2020-06-19 16:23:42,405 basehttp 154 "GET /static/static/js/jquery-1.12.4.min.js HTTP/1.1" 404 3880
+INFO 2020-06-19 16:23:54,127 basehttp 154 "GET /logout/ HTTP/1.1" 302 0
+INFO 2020-06-19 16:23:54,137 basehttp 154 "GET / HTTP/1.1" 200 3556
+WARNING 2020-06-19 16:23:54,187 log 228 Not Found: /static/static/bootstrap/css/bootstrap.min.css
+WARNING 2020-06-19 16:23:54,188 basehttp 154 "GET /static/static/bootstrap/css/bootstrap.min.css HTTP/1.1" 404 3904
+WARNING 2020-06-19 16:23:54,191 log 228 Not Found: /static/static/common/jquery.pagination.css
+WARNING 2020-06-19 16:23:54,195 log 228 Not Found: /static/static/js/axios-0.18.0.min.js
+WARNING 2020-06-19 16:23:54,197 log 228 Not Found: /static/static/md_css/monokai.css
+WARNING 2020-06-19 16:23:54,199 log 228 Not Found: /static/static/js/vue-2.5.16.js
+WARNING 2020-06-19 16:23:54,201 basehttp 154 "GET /static/static/common/jquery.pagination.css HTTP/1.1" 404 3895
+WARNING 2020-06-19 16:23:54,203 log 228 Not Found: /static/static/common/common.css
+WARNING 2020-06-19 16:23:54,204 basehttp 154 "GET /static/static/js/axios-0.18.0.min.js HTTP/1.1" 404 3877
+WARNING 2020-06-19 16:23:54,208 basehttp 154 "GET /static/static/common/common.css HTTP/1.1" 404 3862
+WARNING 2020-06-19 16:23:54,208 basehttp 154 "GET /static/static/md_css/monokai.css HTTP/1.1" 404 3865
+WARNING 2020-06-19 16:23:54,208 basehttp 154 "GET /static/static/js/vue-2.5.16.js HTTP/1.1" 404 3859
+INFO 2020-06-19 16:23:54,217 basehttp 154 "GET /static/js/common.js HTTP/1.1" 304 0
+INFO 2020-06-19 16:23:54,217 basehttp 154 "GET /static/js/host.js HTTP/1.1" 304 0
+INFO 2020-06-19 16:23:54,221 basehttp 154 "GET /static/js/index.js HTTP/1.1" 304 0
+INFO 2020-06-19 16:23:54,222 basehttp 154 "GET /static/js/jquery.pagination.min.js HTTP/1.1" 304 0
+WARNING 2020-06-19 16:23:54,224 log 228 Not Found: /static/static/js/jquery-1.12.4.min.js
+WARNING 2020-06-19 16:23:54,225 basehttp 154 "GET /static/static/js/jquery-1.12.4.min.js HTTP/1.1" 404 3880
+WARNING 2020-06-19 16:23:54,229 log 228 Not Found: /static/static/js/axios-0.18.0.min.js
+WARNING 2020-06-19 16:23:54,229 basehttp 154 "GET /static/static/js/axios-0.18.0.min.js HTTP/1.1" 404 3877
+WARNING 2020-06-19 16:23:54,242 log 228 Not Found: /static/static/js/jquery-1.12.4.min.js
+WARNING 2020-06-19 16:23:54,242 basehttp 154 "GET /static/static/js/jquery-1.12.4.min.js HTTP/1.1" 404 3880
+INFO 2020-06-19 16:23:55,762 basehttp 154 "GET /logout/ HTTP/1.1" 302 0
+INFO 2020-06-19 16:23:55,772 basehttp 154 "GET / HTTP/1.1" 200 3556
+WARNING 2020-06-19 16:23:55,821 log 228 Not Found: /static/static/bootstrap/css/bootstrap.min.css
+WARNING 2020-06-19 16:23:55,824 basehttp 154 "GET /static/static/bootstrap/css/bootstrap.min.css HTTP/1.1" 404 3904
+WARNING 2020-06-19 16:23:55,829 log 228 Not Found: /static/static/common/common.css
+WARNING 2020-06-19 16:23:55,831 log 228 Not Found: /static/static/js/vue-2.5.16.js
+WARNING 2020-06-19 16:23:55,833 log 228 Not Found: /static/static/js/axios-0.18.0.min.js
+WARNING 2020-06-19 16:23:55,836 log 228 Not Found: /static/static/md_css/monokai.css
+WARNING 2020-06-19 16:23:55,837 basehttp 154 "GET /static/static/js/vue-2.5.16.js HTTP/1.1" 404 3859
+WARNING 2020-06-19 16:23:55,841 log 228 Not Found: /static/static/common/jquery.pagination.css
+WARNING 2020-06-19 16:23:55,842 basehttp 154 "GET /static/static/common/common.css HTTP/1.1" 404 3862
+WARNING 2020-06-19 16:23:55,844 basehttp 154 "GET /static/static/js/axios-0.18.0.min.js HTTP/1.1" 404 3877
+WARNING 2020-06-19 16:23:55,846 basehttp 154 "GET /static/static/md_css/monokai.css HTTP/1.1" 404 3865
+WARNING 2020-06-19 16:23:55,847 basehttp 154 "GET /static/static/common/jquery.pagination.css HTTP/1.1" 404 3895
+INFO 2020-06-19 16:23:55,856 basehttp 154 "GET /static/js/index.js HTTP/1.1" 304 0
+INFO 2020-06-19 16:23:55,857 basehttp 154 "GET /static/js/host.js HTTP/1.1" 304 0
+INFO 2020-06-19 16:23:55,858 basehttp 154 "GET /static/js/common.js HTTP/1.1" 304 0
+INFO 2020-06-19 16:23:55,860 basehttp 154 "GET /static/js/jquery.pagination.min.js HTTP/1.1" 304 0
+WARNING 2020-06-19 16:23:55,863 log 228 Not Found: /static/static/js/jquery-1.12.4.min.js
+WARNING 2020-06-19 16:23:55,863 basehttp 154 "GET /static/static/js/jquery-1.12.4.min.js HTTP/1.1" 404 3880
+WARNING 2020-06-19 16:23:55,867 log 228 Not Found: /static/static/js/axios-0.18.0.min.js
+WARNING 2020-06-19 16:23:55,868 basehttp 154 "GET /static/static/js/axios-0.18.0.min.js HTTP/1.1" 404 3877
+WARNING 2020-06-19 16:23:55,881 log 228 Not Found: /static/static/js/jquery-1.12.4.min.js
+WARNING 2020-06-19 16:23:55,881 basehttp 154 "GET /static/static/js/jquery-1.12.4.min.js HTTP/1.1" 404 3880
+INFO 2020-06-19 16:23:56,903 basehttp 154 "GET /logout/ HTTP/1.1" 302 0
+INFO 2020-06-19 16:23:56,914 basehttp 154 "GET / HTTP/1.1" 200 3556
+WARNING 2020-06-19 16:23:56,964 log 228 Not Found: /static/static/md_css/monokai.css
+WARNING 2020-06-19 16:23:56,966 log 228 Not Found: /static/static/bootstrap/css/bootstrap.min.css
+WARNING 2020-06-19 16:23:56,968 basehttp 154 "GET /static/static/md_css/monokai.css HTTP/1.1" 404 3865
+WARNING 2020-06-19 16:23:56,971 log 228 Not Found: /static/static/common/common.css
+WARNING 2020-06-19 16:23:56,974 log 228 Not Found: /static/static/common/jquery.pagination.css
+WARNING 2020-06-19 16:23:56,974 basehttp 154 "GET /static/static/bootstrap/css/bootstrap.min.css HTTP/1.1" 404 3904
+WARNING 2020-06-19 16:23:56,976 log 228 Not Found: /static/static/js/axios-0.18.0.min.js
+WARNING 2020-06-19 16:23:56,978 log 228 Not Found: /static/static/js/vue-2.5.16.js
+WARNING 2020-06-19 16:23:56,981 basehttp 154 "GET /static/static/common/common.css HTTP/1.1" 404 3862
+WARNING 2020-06-19 16:23:56,981 basehttp 154 "GET /static/static/common/jquery.pagination.css HTTP/1.1" 404 3895
+WARNING 2020-06-19 16:23:56,985 basehttp 154 "GET /static/static/js/axios-0.18.0.min.js HTTP/1.1" 404 3877
+WARNING 2020-06-19 16:23:56,985 basehttp 154 "GET /static/static/js/vue-2.5.16.js HTTP/1.1" 404 3859
+INFO 2020-06-19 16:23:56,992 basehttp 154 "GET /static/js/host.js HTTP/1.1" 304 0
+INFO 2020-06-19 16:23:56,993 basehttp 154 "GET /static/js/common.js HTTP/1.1" 304 0
+INFO 2020-06-19 16:23:56,998 basehttp 154 "GET /static/js/jquery.pagination.min.js HTTP/1.1" 304 0
+INFO 2020-06-19 16:23:56,999 basehttp 154 "GET /static/js/index.js HTTP/1.1" 304 0
+WARNING 2020-06-19 16:23:57,002 log 228 Not Found: /static/static/js/jquery-1.12.4.min.js
+WARNING 2020-06-19 16:23:57,002 basehttp 154 "GET /static/static/js/jquery-1.12.4.min.js HTTP/1.1" 404 3880
+WARNING 2020-06-19 16:23:57,006 log 228 Not Found: /static/static/js/axios-0.18.0.min.js
+WARNING 2020-06-19 16:23:57,007 basehttp 154 "GET /static/static/js/axios-0.18.0.min.js HTTP/1.1" 404 3877
+WARNING 2020-06-19 16:23:57,020 log 228 Not Found: /static/static/js/jquery-1.12.4.min.js
+WARNING 2020-06-19 16:23:57,020 basehttp 154 "GET /static/static/js/jquery-1.12.4.min.js HTTP/1.1" 404 3880
+INFO 2020-06-19 16:23:57,721 basehttp 154 "GET /logout/ HTTP/1.1" 302 0
+INFO 2020-06-19 16:23:57,731 basehttp 154 "GET / HTTP/1.1" 200 3556
+WARNING 2020-06-19 16:23:57,779 log 228 Not Found: /static/static/bootstrap/css/bootstrap.min.css
+WARNING 2020-06-19 16:23:57,780 basehttp 154 "GET /static/static/bootstrap/css/bootstrap.min.css HTTP/1.1" 404 3904
+WARNING 2020-06-19 16:23:57,784 log 228 Not Found: /static/static/md_css/monokai.css
+WARNING 2020-06-19 16:23:57,786 log 228 Not Found: /static/static/js/vue-2.5.16.js
+WARNING 2020-06-19 16:23:57,788 log 228 Not Found: /static/static/common/common.css
+WARNING 2020-06-19 16:23:57,791 log 228 Not Found: /static/static/common/jquery.pagination.css
+WARNING 2020-06-19 16:23:57,793 basehttp 154 "GET /static/static/md_css/monokai.css HTTP/1.1" 404 3865
+WARNING 2020-06-19 16:23:57,795 log 228 Not Found: /static/static/js/axios-0.18.0.min.js
+WARNING 2020-06-19 16:23:57,796 basehttp 154 "GET /static/static/common/jquery.pagination.css HTTP/1.1" 404 3895
+WARNING 2020-06-19 16:23:57,797 basehttp 154 "GET /static/static/js/vue-2.5.16.js HTTP/1.1" 404 3859
+WARNING 2020-06-19 16:23:57,800 basehttp 154 "GET /static/static/common/common.css HTTP/1.1" 404 3862
+WARNING 2020-06-19 16:23:57,800 basehttp 154 "GET /static/static/js/axios-0.18.0.min.js HTTP/1.1" 404 3877
+INFO 2020-06-19 16:23:57,807 basehttp 154 "GET /static/js/common.js HTTP/1.1" 304 0
+INFO 2020-06-19 16:23:57,809 basehttp 154 "GET /static/js/index.js HTTP/1.1" 304 0
+INFO 2020-06-19 16:23:57,809 basehttp 154 "GET /static/js/host.js HTTP/1.1" 304 0
+INFO 2020-06-19 16:23:57,810 basehttp 154 "GET /static/js/jquery.pagination.min.js HTTP/1.1" 304 0
+WARNING 2020-06-19 16:23:57,813 log 228 Not Found: /static/static/js/jquery-1.12.4.min.js
+WARNING 2020-06-19 16:23:57,813 basehttp 154 "GET /static/static/js/jquery-1.12.4.min.js HTTP/1.1" 404 3880
+INFO 2020-06-19 16:23:58,568 basehttp 154 "GET /logout/ HTTP/1.1" 302 0
+INFO 2020-06-19 16:23:58,578 basehttp 154 "GET / HTTP/1.1" 200 3556
+WARNING 2020-06-19 16:23:58,625 log 228 Not Found: /static/static/bootstrap/css/bootstrap.min.css
+WARNING 2020-06-19 16:23:58,626 basehttp 154 "GET /static/static/bootstrap/css/bootstrap.min.css HTTP/1.1" 404 3904
+WARNING 2020-06-19 16:23:58,629 log 228 Not Found: /static/static/common/jquery.pagination.css
+WARNING 2020-06-19 16:23:58,632 log 228 Not Found: /static/static/js/vue-2.5.16.js
+WARNING 2020-06-19 16:23:58,634 log 228 Not Found: /static/static/common/common.css
+WARNING 2020-06-19 16:23:58,638 log 228 Not Found: /static/static/js/axios-0.18.0.min.js
+WARNING 2020-06-19 16:23:58,643 log 228 Not Found: /static/static/md_css/monokai.css
+WARNING 2020-06-19 16:23:58,644 basehttp 154 "GET /static/static/js/vue-2.5.16.js HTTP/1.1" 404 3859
+WARNING 2020-06-19 16:23:58,644 basehttp 154 "GET /static/static/md_css/monokai.css HTTP/1.1" 404 3865
+WARNING 2020-06-19 16:23:58,645 basehttp 154 "GET /static/static/js/axios-0.18.0.min.js HTTP/1.1" 404 3877
+WARNING 2020-06-19 16:23:58,645 basehttp 154 "GET /static/static/common/jquery.pagination.css HTTP/1.1" 404 3895
+WARNING 2020-06-19 16:23:58,645 basehttp 154 "GET /static/static/common/common.css HTTP/1.1" 404 3862
+INFO 2020-06-19 16:23:58,654 basehttp 154 "GET /static/js/host.js HTTP/1.1" 304 0
+WARNING 2020-06-19 16:23:58,660 log 228 Not Found: /static/static/js/jquery-1.12.4.min.js
+WARNING 2020-06-19 16:23:58,661 basehttp 154 "GET /static/static/js/jquery-1.12.4.min.js HTTP/1.1" 404 3880
+INFO 2020-06-19 16:23:58,662 basehttp 154 "GET /static/js/common.js HTTP/1.1" 304 0
+INFO 2020-06-19 16:23:58,663 basehttp 154 "GET /static/js/index.js HTTP/1.1" 304 0
+INFO 2020-06-19 16:23:58,664 basehttp 154 "GET /static/js/jquery.pagination.min.js HTTP/1.1" 304 0
+WARNING 2020-06-19 16:23:58,669 log 228 Not Found: /static/static/js/axios-0.18.0.min.js
+WARNING 2020-06-19 16:23:58,670 basehttp 154 "GET /static/static/js/axios-0.18.0.min.js HTTP/1.1" 404 3877
+WARNING 2020-06-19 16:23:58,682 log 228 Not Found: /static/static/js/jquery-1.12.4.min.js
+WARNING 2020-06-19 16:23:58,682 basehttp 154 "GET /static/static/js/jquery-1.12.4.min.js HTTP/1.1" 404 3880
+INFO 2020-06-19 16:23:59,569 basehttp 154 "GET /logout/ HTTP/1.1" 302 0
+INFO 2020-06-19 16:23:59,579 basehttp 154 "GET / HTTP/1.1" 200 3556
+WARNING 2020-06-19 16:23:59,628 log 228 Not Found: /static/static/md_css/monokai.css
+WARNING 2020-06-19 16:23:59,630 log 228 Not Found: /static/static/bootstrap/css/bootstrap.min.css
+WARNING 2020-06-19 16:23:59,632 log 228 Not Found: /static/static/js/axios-0.18.0.min.js
+WARNING 2020-06-19 16:23:59,635 log 228 Not Found: /static/static/common/jquery.pagination.css
+WARNING 2020-06-19 16:23:59,635 basehttp 154 "GET /static/static/md_css/monokai.css HTTP/1.1" 404 3865
+WARNING 2020-06-19 16:23:59,638 log 228 Not Found: /static/static/js/vue-2.5.16.js
+WARNING 2020-06-19 16:23:59,640 log 228 Not Found: /static/static/common/common.css
+WARNING 2020-06-19 16:23:59,642 basehttp 154 "GET /static/static/bootstrap/css/bootstrap.min.css HTTP/1.1" 404 3904
+WARNING 2020-06-19 16:23:59,642 basehttp 154 "GET /static/static/common/jquery.pagination.css HTTP/1.1" 404 3895
+WARNING 2020-06-19 16:23:59,643 basehttp 154 "GET /static/static/js/axios-0.18.0.min.js HTTP/1.1" 404 3877
+WARNING 2020-06-19 16:23:59,646 basehttp 154 "GET /static/static/js/vue-2.5.16.js HTTP/1.1" 404 3859
+WARNING 2020-06-19 16:23:59,650 basehttp 154 "GET /static/static/common/common.css HTTP/1.1" 404 3862
+INFO 2020-06-19 16:23:59,659 basehttp 154 "GET /static/js/host.js HTTP/1.1" 304 0
+INFO 2020-06-19 16:23:59,660 basehttp 154 "GET /static/js/jquery.pagination.min.js HTTP/1.1" 304 0
+INFO 2020-06-19 16:23:59,661 basehttp 154 "GET /static/js/index.js HTTP/1.1" 304 0
+INFO 2020-06-19 16:23:59,662 basehttp 154 "GET /static/js/common.js HTTP/1.1" 304 0
+WARNING 2020-06-19 16:23:59,666 log 228 Not Found: /static/static/js/jquery-1.12.4.min.js
+WARNING 2020-06-19 16:23:59,666 basehttp 154 "GET /static/static/js/jquery-1.12.4.min.js HTTP/1.1" 404 3880
+WARNING 2020-06-19 16:23:59,669 log 228 Not Found: /static/static/js/axios-0.18.0.min.js
+WARNING 2020-06-19 16:23:59,670 basehttp 154 "GET /static/static/js/axios-0.18.0.min.js HTTP/1.1" 404 3877
+WARNING 2020-06-19 16:23:59,682 log 228 Not Found: /static/static/js/jquery-1.12.4.min.js
+WARNING 2020-06-19 16:23:59,682 basehttp 154 "GET /static/static/js/jquery-1.12.4.min.js HTTP/1.1" 404 3880
+INFO 2020-06-19 16:24:00,681 basehttp 154 "GET /login/ HTTP/1.1" 200 3191
+INFO 2020-06-19 16:24:00,712 basehttp 154 "GET /static/bootstrap/css/bootstrap.min.css HTTP/1.1" 304 0
+INFO 2020-06-19 16:24:00,713 basehttp 154 "GET /static/js/axios-0.18.0.min.js HTTP/1.1" 304 0
+INFO 2020-06-19 16:24:00,713 basehttp 154 "GET /static/js/vue-2.5.16.js HTTP/1.1" 304 0
+INFO 2020-06-19 16:24:00,714 basehttp 154 "GET /static/js/host.js HTTP/1.1" 304 0
+INFO 2020-06-19 16:24:00,715 basehttp 154 "GET /static/js/login.js HTTP/1.1" 304 0
+INFO 2020-06-19 16:24:00,715 basehttp 154 "GET /static/js/common.js HTTP/1.1" 304 0
+INFO 2020-06-19 16:24:06,081 basehttp 154 "GET / HTTP/1.1" 200 3556
+WARNING 2020-06-19 16:24:06,131 log 228 Not Found: /static/static/bootstrap/css/bootstrap.min.css
+WARNING 2020-06-19 16:24:06,132 basehttp 154 "GET /static/static/bootstrap/css/bootstrap.min.css HTTP/1.1" 404 3904
+WARNING 2020-06-19 16:24:06,135 log 228 Not Found: /static/static/common/common.css
+WARNING 2020-06-19 16:24:06,138 log 228 Not Found: /static/static/md_css/monokai.css
+WARNING 2020-06-19 16:24:06,141 log 228 Not Found: /static/static/common/jquery.pagination.css
+WARNING 2020-06-19 16:24:06,144 log 228 Not Found: /static/static/js/vue-2.5.16.js
+WARNING 2020-06-19 16:24:06,145 basehttp 154 "GET /static/static/md_css/monokai.css HTTP/1.1" 404 3865
+WARNING 2020-06-19 16:24:06,149 log 228 Not Found: /static/static/js/axios-0.18.0.min.js
+WARNING 2020-06-19 16:24:06,149 basehttp 154 "GET /static/static/common/common.css HTTP/1.1" 404 3862
+WARNING 2020-06-19 16:24:06,152 basehttp 154 "GET /static/static/common/jquery.pagination.css HTTP/1.1" 404 3895
+WARNING 2020-06-19 16:24:06,154 basehttp 154 "GET /static/static/js/vue-2.5.16.js HTTP/1.1" 404 3859
+WARNING 2020-06-19 16:24:06,157 basehttp 154 "GET /static/static/js/axios-0.18.0.min.js HTTP/1.1" 404 3877
+INFO 2020-06-19 16:24:06,159 basehttp 154 "GET /static/js/host.js HTTP/1.1" 304 0
+WARNING 2020-06-19 16:24:06,163 log 228 Not Found: /static/static/js/jquery-1.12.4.min.js
+INFO 2020-06-19 16:24:06,164 basehttp 154 "GET /static/js/index.js HTTP/1.1" 304 0
+INFO 2020-06-19 16:24:06,165 basehttp 154 "GET /static/js/common.js HTTP/1.1" 304 0
+WARNING 2020-06-19 16:24:06,166 basehttp 154 "GET /static/static/js/jquery-1.12.4.min.js HTTP/1.1" 404 3880
+INFO 2020-06-19 16:24:06,166 basehttp 154 "GET /static/js/jquery.pagination.min.js HTTP/1.1" 304 0
+INFO 2020-06-19 16:27:49,204 autoreload 578 Watching for file changes with StatReloader
+ERROR 2020-06-19 16:27:50,927 log 228 Internal Server Error: /
+Traceback (most recent call last):
+  File "E:\PycharmProjects\virtualenvs\Django\lib\site-packages\django\core\handlers\exception.py", line 34, in inner
+    response = get_response(request)
+  File "E:\PycharmProjects\virtualenvs\Django\lib\site-packages\django\core\handlers\base.py", line 115, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "E:\PycharmProjects\virtualenvs\Django\lib\site-packages\django\core\handlers\base.py", line 113, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "E:\PycharmProjects\virtualenvs\Django\lib\site-packages\django\views\generic\base.py", line 71, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "E:\PycharmProjects\virtualenvs\Django\lib\site-packages\django\views\generic\base.py", line 97, in dispatch
+    return handler(request, *args, **kwargs)
+  File "E:\PycharmProjects\Blog\home\views.py", line 16, in get
+    cat_id = request.GET.get()
+TypeError: get() missing 1 required positional argument: 'key'
+ERROR 2020-06-19 16:27:50,931 basehttp 154 "GET / HTTP/1.1" 500 82737
+INFO 2020-06-19 16:28:09,547 autoreload 578 Watching for file changes with StatReloader
+WARNING 2020-06-19 16:28:10,933 log 228 Not Found: /
+WARNING 2020-06-19 16:28:10,935 basehttp 154 "GET / HTTP/1.1" 404 15
+INFO 2020-06-19 16:30:21,716 autoreload 578 Watching for file changes with StatReloader
+INFO 2020-06-19 16:30:23,457 basehttp 154 "GET / HTTP/1.1" 200 5016
+WARNING 2020-06-19 16:30:23,543 log 228 Not Found: /static/static/bootstrap/css/bootstrap.min.css
+WARNING 2020-06-19 16:30:23,546 log 228 Not Found: /static/static/md_css/monokai.css
+WARNING 2020-06-19 16:30:23,550 log 228 Not Found: /static/static/common/jquery.pagination.css
+WARNING 2020-06-19 16:30:23,552 basehttp 154 "GET /static/static/bootstrap/css/bootstrap.min.css HTTP/1.1" 404 3904
+WARNING 2020-06-19 16:30:23,556 log 228 Not Found: /static/static/js/vue-2.5.16.js
+WARNING 2020-06-19 16:30:23,559 basehttp 154 "GET /static/static/md_css/monokai.css HTTP/1.1" 404 3865
+WARNING 2020-06-19 16:30:23,563 log 228 Not Found: /static/static/common/common.css
+WARNING 2020-06-19 16:30:23,564 basehttp 154 "GET /static/static/common/jquery.pagination.css HTTP/1.1" 404 3895
+WARNING 2020-06-19 16:30:23,567 basehttp 154 "GET /static/static/js/vue-2.5.16.js HTTP/1.1" 404 3859
+WARNING 2020-06-19 16:30:23,578 log 228 Not Found: /static/static/js/axios-0.18.0.min.js
+WARNING 2020-06-19 16:30:23,579 basehttp 154 "GET /static/static/common/common.css HTTP/1.1" 404 3862
+WARNING 2020-06-19 16:30:23,580 basehttp 154 "GET /static/static/js/axios-0.18.0.min.js HTTP/1.1" 404 3877
+INFO 2020-06-19 16:30:23,581 basehttp 154 "GET /static/js/host.js HTTP/1.1" 304 0
+WARNING 2020-06-19 16:30:23,592 log 228 Not Found: /static/static/js/jquery-1.12.4.min.js
+WARNING 2020-06-19 16:30:23,595 basehttp 154 "GET /static/static/js/jquery-1.12.4.min.js HTTP/1.1" 404 3880
+INFO 2020-06-19 16:30:23,600 basehttp 154 "GET /static/js/index.js HTTP/1.1" 304 0
+INFO 2020-06-19 16:30:23,601 basehttp 154 "GET /static/js/common.js HTTP/1.1" 304 0
+INFO 2020-06-19 16:30:23,608 basehttp 154 "GET /static/js/jquery.pagination.min.js HTTP/1.1" 304 0
+INFO 2020-06-19 16:30:45,459 autoreload 578 Watching for file changes with StatReloader
+INFO 2020-06-19 16:30:57,198 basehttp 154 "GET / HTTP/1.1" 200 5708
+WARNING 2020-06-19 16:30:57,250 log 228 Not Found: /static/static/bootstrap/css/bootstrap.min.css
+WARNING 2020-06-19 16:30:57,253 log 228 Not Found: /static/static/common/common.css
+WARNING 2020-06-19 16:30:57,256 log 228 Not Found: /static/static/md_css/monokai.css
+WARNING 2020-06-19 16:30:57,258 basehttp 154 "GET /static/static/md_css/monokai.css HTTP/1.1" 404 3865
+WARNING 2020-06-19 16:30:57,258 basehttp 154 "GET /static/static/bootstrap/css/bootstrap.min.css HTTP/1.1" 404 3904
+WARNING 2020-06-19 16:30:57,258 basehttp 154 "GET /static/static/common/common.css HTTP/1.1" 404 3862
+WARNING 2020-06-19 16:30:57,263 log 228 Not Found: /static/static/common/jquery.pagination.css
+WARNING 2020-06-19 16:30:57,268 log 228 Not Found: /static/static/js/vue-2.5.16.js
+WARNING 2020-06-19 16:30:57,269 basehttp 154 "GET /static/static/common/jquery.pagination.css HTTP/1.1" 404 3895
+WARNING 2020-06-19 16:30:57,273 log 228 Not Found: /static/static/js/axios-0.18.0.min.js
+WARNING 2020-06-19 16:30:57,274 basehttp 154 "GET /static/static/js/axios-0.18.0.min.js HTTP/1.1" 404 3877
+WARNING 2020-06-19 16:30:57,277 basehttp 154 "GET /static/static/js/vue-2.5.16.js HTTP/1.1" 404 3859
+INFO 2020-06-19 16:30:57,279 basehttp 154 "GET /static/js/host.js HTTP/1.1" 304 0
+WARNING 2020-06-19 16:30:57,284 log 228 Not Found: /static/static/js/jquery-1.12.4.min.js
+WARNING 2020-06-19 16:30:57,285 basehttp 154 "GET /static/static/js/jquery-1.12.4.min.js HTTP/1.1" 404 3880
+INFO 2020-06-19 16:30:57,301 basehttp 154 "GET /static/js/common.js HTTP/1.1" 304 0
+INFO 2020-06-19 16:30:57,302 basehttp 154 "GET /static/js/index.js HTTP/1.1" 304 0
+WARNING 2020-06-19 16:30:57,309 log 228 Not Found: /static/static/js/axios-0.18.0.min.js
+WARNING 2020-06-19 16:30:57,310 basehttp 154 "GET /static/static/js/axios-0.18.0.min.js HTTP/1.1" 404 3877
+INFO 2020-06-19 16:30:57,314 basehttp 154 "GET /static/js/jquery.pagination.min.js HTTP/1.1" 304 0
+WARNING 2020-06-19 16:30:57,326 log 228 Not Found: /static/static/js/jquery-1.12.4.min.js
+WARNING 2020-06-19 16:30:57,326 basehttp 154 "GET /static/static/js/jquery-1.12.4.min.js HTTP/1.1" 404 3880
+INFO 2020-06-19 16:31:37,101 autoreload 578 Watching for file changes with StatReloader
+INFO 2020-06-19 16:31:38,570 basehttp 154 "GET / HTTP/1.1" 200 6727
+INFO 2020-06-19 16:31:38,616 basehttp 154 "GET /static/bootstrap/css/bootstrap.min.css HTTP/1.1" 304 0
+INFO 2020-06-19 16:31:38,616 basehttp 154 "GET /static/md_css/monokai.css HTTP/1.1" 304 0
+INFO 2020-06-19 16:31:38,619 basehttp 154 "GET /static/common/common.css HTTP/1.1" 304 0
+INFO 2020-06-19 16:31:38,620 basehttp 154 "GET /static/common/jquery.pagination.css HTTP/1.1" 304 0
+INFO 2020-06-19 16:31:38,621 basehttp 154 "GET /static/js/vue-2.5.16.js HTTP/1.1" 304 0
+INFO 2020-06-19 16:31:38,624 basehttp 154 "GET /static/js/axios-0.18.0.min.js HTTP/1.1" 304 0
+INFO 2020-06-19 16:31:38,626 basehttp 154 "GET /static/js/jquery-1.12.4.min.js HTTP/1.1" 304 0
+INFO 2020-06-19 16:31:38,631 basehttp 154 "GET /static/js/host.js HTTP/1.1" 304 0
+INFO 2020-06-19 16:31:38,688 basehttp 154 "GET /static/js/common.js HTTP/1.1" 304 0
+INFO 2020-06-19 16:31:38,689 basehttp 154 "GET /static/js/index.js HTTP/1.1" 304 0
+INFO 2020-06-19 16:31:38,723 basehttp 154 "GET /static/js/jquery.pagination.min.js HTTP/1.1" 304 0
+INFO 2020-06-19 17:08:19,522 autoreload 578 Watching for file changes with StatReloader
+INFO 2020-06-19 17:08:21,575 basehttp 154 "GET / HTTP/1.1" 200 6727
+INFO 2020-06-19 17:08:21,630 basehttp 154 "GET /static/bootstrap/css/bootstrap.min.css HTTP/1.1" 304 0
+INFO 2020-06-19 17:08:21,631 basehttp 154 "GET /static/md_css/monokai.css HTTP/1.1" 304 0
+INFO 2020-06-19 17:08:21,635 basehttp 154 "GET /static/common/common.css HTTP/1.1" 304 0
+INFO 2020-06-19 17:08:21,636 basehttp 154 "GET /static/common/jquery.pagination.css HTTP/1.1" 304 0
+INFO 2020-06-19 17:08:21,638 basehttp 154 "GET /static/js/vue-2.5.16.js HTTP/1.1" 304 0
+INFO 2020-06-19 17:08:21,640 basehttp 154 "GET /static/js/axios-0.18.0.min.js HTTP/1.1" 304 0
+INFO 2020-06-19 17:08:21,642 basehttp 154 "GET /static/js/jquery-1.12.4.min.js HTTP/1.1" 304 0
+INFO 2020-06-19 17:08:21,645 basehttp 154 "GET /static/js/host.js HTTP/1.1" 304 0
+INFO 2020-06-19 17:08:21,734 basehttp 154 "GET /static/js/index.js HTTP/1.1" 304 0
+INFO 2020-06-19 17:08:21,734 basehttp 154 "GET /static/js/common.js HTTP/1.1" 304 0
+INFO 2020-06-19 17:08:21,746 basehttp 154 "GET /static/js/jquery.pagination.min.js HTTP/1.1" 304 0
+INFO 2020-06-19 17:08:29,884 basehttp 154 "GET /login/ HTTP/1.1" 200 3191
+INFO 2020-06-19 17:08:29,920 basehttp 154 "GET /static/bootstrap/css/bootstrap.min.css HTTP/1.1" 304 0
+INFO 2020-06-19 17:08:29,922 basehttp 154 "GET /static/js/vue-2.5.16.js HTTP/1.1" 304 0
+INFO 2020-06-19 17:08:29,922 basehttp 154 "GET /static/js/axios-0.18.0.min.js HTTP/1.1" 304 0
+INFO 2020-06-19 17:08:29,923 basehttp 154 "GET /static/js/host.js HTTP/1.1" 304 0
+INFO 2020-06-19 17:08:29,924 basehttp 154 "GET /static/js/common.js HTTP/1.1" 304 0
+INFO 2020-06-19 17:08:29,925 basehttp 154 "GET /static/js/login.js HTTP/1.1" 304 0
+INFO 2020-06-19 17:08:30,946 basehttp 154 "GET /register/ HTTP/1.1" 200 5316
+INFO 2020-06-19 17:08:30,978 basehttp 154 "GET /static/bootstrap/css/bootstrap.min.css HTTP/1.1" 304 0
+INFO 2020-06-19 17:08:30,979 basehttp 154 "GET /static/js/register.js HTTP/1.1" 304 0
+INFO 2020-06-19 17:08:30,980 basehttp 154 "GET /static/js/vue-2.5.16.js HTTP/1.1" 304 0
+INFO 2020-06-19 17:08:30,982 basehttp 154 "GET /static/js/host.js HTTP/1.1" 304 0
+INFO 2020-06-19 17:08:30,982 basehttp 154 "GET /static/js/common.js HTTP/1.1" 304 0
+INFO 2020-06-19 17:08:30,982 basehttp 154 "GET /static/js/axios-0.18.0.min.js HTTP/1.1" 304 0
+INFO 2020-06-19 17:08:31,070 basehttp 154 "GET /imagecode/?uuid=d09a4275-afb0-4cad-b446-5aecb5b4e1c6 HTTP/1.1" 200 2960
+INFO 2020-06-19 17:08:32,105 basehttp 154 "GET /imagecode/?uuid=9046157b-5934-436e-a6de-ede9e41147b9 HTTP/1.1" 200 2923
+INFO 2020-06-19 17:08:32,527 basehttp 154 "GET /imagecode/?uuid=443d254d-82c5-46fb-86fd-5136c2e96553 HTTP/1.1" 200 3069
+INFO 2020-06-19 17:08:32,831 basehttp 154 "GET /imagecode/?uuid=79cb6c1a-db25-44db-b3eb-01846ede5488 HTTP/1.1" 200 2664
+INFO 2020-06-19 17:08:32,992 basehttp 154 "GET /imagecode/?uuid=44de1bf1-86e7-4603-ba15-cc7670544ca1 HTTP/1.1" 200 3208
+INFO 2020-06-19 17:08:33,150 basehttp 154 "GET /imagecode/?uuid=2873be1a-df1b-4f2c-b67b-5d22b860779f HTTP/1.1" 200 3272
+INFO 2020-06-19 17:08:33,287 basehttp 154 "GET /imagecode/?uuid=3dde81b3-1063-475f-9153-99438dde2aae HTTP/1.1" 200 3262
+INFO 2020-06-19 17:08:33,440 basehttp 154 "GET /imagecode/?uuid=d504912e-6ef0-44f9-9d40-487b8396520f HTTP/1.1" 200 3428
+INFO 2020-06-19 17:08:33,591 basehttp 154 "GET /imagecode/?uuid=f9442554-880e-488b-93ce-8b3f8f8d490e HTTP/1.1" 200 2576
+INFO 2020-06-19 17:08:33,745 basehttp 154 "GET /imagecode/?uuid=c9f6ac4f-5bd1-4a32-9753-da760ff75c85 HTTP/1.1" 200 3159
+INFO 2020-06-19 17:08:33,887 basehttp 154 "GET /imagecode/?uuid=cfa9a548-f138-4f10-b141-43cd09a7aabe HTTP/1.1" 200 3219
+INFO 2020-06-19 17:08:43,495 basehttp 154 "GET /static/bootstrap/css/bootstrap.min.css HTTP/1.1" 304 0
+WARNING 2020-06-19 17:08:43,528 log 228 Not Found: /static/js/axios.min.map
+WARNING 2020-06-19 17:08:43,529 basehttp 154 "GET /static/js/axios.min.map HTTP/1.1" 404 3838
+INFO 2020-06-19 17:08:49,819 basehttp 154 "GET /imagecode/?uuid=6a634744-0b3d-486c-acac-a2e77d26e696 HTTP/1.1" 200 3146
+INFO 2020-06-19 17:08:55,489 basehttp 154 "GET /imagecode/?uuid=2e1cee22-0dff-4804-9f50-39daec5244ef HTTP/1.1" 200 3318
+INFO 2020-06-19 17:08:55,919 basehttp 154 "GET /imagecode/?uuid=b14dafd1-d3eb-4d07-97e3-55eee9a85f96 HTTP/1.1" 200 3427
+INFO 2020-06-19 17:08:58,917 basehttp 154 "GET /imagecode/?uuid=70666768-77f4-430f-b271-b08bd228eec4 HTTP/1.1" 200 3237
+INFO 2020-06-19 17:08:59,275 basehttp 154 "GET /imagecode/?uuid=9af7c8de-d52d-454c-bb24-f45664aeadcc HTTP/1.1" 200 3447
+INFO 2020-06-19 17:08:59,458 basehttp 154 "GET /imagecode/?uuid=7aec88bb-5820-4eca-8a82-56873dab1fb9 HTTP/1.1" 200 3433
+INFO 2020-06-19 17:08:59,640 basehttp 154 "GET /imagecode/?uuid=b333917f-2563-43cf-835c-bb834366dfd6 HTTP/1.1" 200 3098
+INFO 2020-06-19 17:08:59,968 basehttp 154 "GET /imagecode/?uuid=0c881efb-0b69-46cd-ba7f-a2bf686ec94a HTTP/1.1" 200 2591
+INFO 2020-06-19 17:09:00,104 basehttp 154 "GET /imagecode/?uuid=6c730f29-4fe5-4784-bcea-47a7a2be030c HTTP/1.1" 200 3314
+INFO 2020-06-19 17:09:00,264 basehttp 154 "GET /imagecode/?uuid=24ced499-090c-4c80-a13c-6ea5e6b971a8 HTTP/1.1" 200 3076
+INFO 2020-06-19 17:09:00,415 basehttp 154 "GET /imagecode/?uuid=9006aa47-4336-4303-b9fb-bd9b071d6866 HTTP/1.1" 200 3183
+INFO 2020-06-19 17:09:00,577 basehttp 154 "GET /imagecode/?uuid=ad8ba2b3-b001-4a8d-a989-83fa8c49c555 HTTP/1.1" 200 2928
+INFO 2020-06-19 17:09:00,736 basehttp 154 "GET /imagecode/?uuid=4624caba-393f-4363-ba0b-f581372dd99f HTTP/1.1" 200 3230
+INFO 2020-06-19 17:09:00,895 basehttp 154 "GET /imagecode/?uuid=d61bcc94-4600-4352-8971-ab560daf51ee HTTP/1.1" 200 3481
+INFO 2020-06-19 17:09:01,047 basehttp 154 "GET /imagecode/?uuid=f6d337cb-2eb5-4708-b0d5-70aad429e55c HTTP/1.1" 200 2997
+INFO 2020-06-19 17:09:01,215 basehttp 154 "GET /imagecode/?uuid=a6e6ea04-e4f3-4517-8955-18bec5e96c31 HTTP/1.1" 200 2937
+INFO 2020-06-19 17:09:01,399 basehttp 154 "GET /imagecode/?uuid=d62de35f-7319-4209-bbb2-a66ad4ac4558 HTTP/1.1" 200 2968
+INFO 2020-06-19 17:09:01,559 basehttp 154 "GET /imagecode/?uuid=cf90b8cc-a7e8-4933-9708-91ca34201208 HTTP/1.1" 200 3499
+INFO 2020-06-19 17:09:01,703 basehttp 154 "GET /imagecode/?uuid=83ff1f63-4205-484d-a730-1b4dbb748d58 HTTP/1.1" 200 3177
+INFO 2020-06-19 17:09:01,858 basehttp 154 "GET /imagecode/?uuid=8731125f-1dce-4775-8884-661940c544f6 HTTP/1.1" 200 3015
+INFO 2020-06-19 17:09:02,024 basehttp 154 "GET /imagecode/?uuid=09d79b5b-7955-4320-a109-8395ec3e26e1 HTTP/1.1" 200 3537
+INFO 2020-06-19 17:09:02,345 basehttp 154 "GET /imagecode/?uuid=850873b6-6ee8-47a2-8240-8122cfbbde5c HTTP/1.1" 200 3598
+INFO 2020-06-19 17:09:02,512 basehttp 154 "GET /imagecode/?uuid=a6ea2e50-3c3b-468d-9aa4-5d78d8ea84ca HTTP/1.1" 200 3416
+INFO 2020-06-19 17:09:02,671 basehttp 154 "GET /imagecode/?uuid=d5bf1594-da71-42b5-b0f1-03e55a82f0b2 HTTP/1.1" 200 3604
+INFO 2020-06-19 17:09:02,823 basehttp 154 "GET /imagecode/?uuid=472cada4-c3cd-4c62-a6db-54dcd1661005 HTTP/1.1" 200 3494
+INFO 2020-06-19 17:09:02,999 basehttp 154 "GET /imagecode/?uuid=e81efe7e-d5b3-4652-822c-13fb8b4a8b75 HTTP/1.1" 200 3115
